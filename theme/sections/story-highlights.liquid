@@ -1,0 +1,66 @@
+{%- comment -%}
+  ORDON EGYPT — Story Highlights (Ozar Minimal Style)
+{%- endcomment -%}
+
+<section class="border-b border-[#e5e5e5] bg-white py-1">
+  <div class="max-w-7xl mx-auto">
+    <div class="story-scroll-track flex gap-4 overflow-x-auto py-2 px-4 scrollbar-none" style="-webkit-overflow-scrolling: touch;">
+      <!-- Story 1: Tees -->
+      <a href="/collections/tees" class="story-circle-item flex flex-col items-center gap-1.5 shrink-0 w-[64px]">
+        <div class="w-[58px] h-[58px] rounded-full p-[2px] border-[1.5px] border-[#111111] bg-white flex items-center justify-center">
+          <img src="{{ 'story-tees.jpg' | asset_url }}" alt="Tees" class="w-full h-full rounded-full object-cover" loading="lazy">
+        </div>
+        <span class="text-[10.5px] font-bold text-[#111111] uppercase tracking-wider text-center">TEES</span>
+      </a>
+
+      <!-- Story 2: Hoodies -->
+      <a href="/collections/hoodies" class="story-circle-item flex flex-col items-center gap-1.5 shrink-0 w-[64px]">
+        <div class="w-[58px] h-[58px] rounded-full p-[2px] border-[1.5px] border-[#111111] bg-white flex items-center justify-center">
+          <img src="{{ 'story-winter.jpg' | asset_url }}" alt="Hoodies" class="w-full h-full rounded-full object-cover" loading="lazy">
+        </div>
+        <span class="text-[10.5px] font-bold text-[#111111] uppercase tracking-wider text-center">HOODIES</span>
+      </a>
+
+      <!-- Story 3: Sweats -->
+      <a href="/collections/sweatshirts" class="story-circle-item flex flex-col items-center gap-1.5 shrink-0 w-[64px]">
+        <div class="w-[58px] h-[58px] rounded-full p-[2px] border-[1.5px] border-[#111111] bg-white flex items-center justify-center">
+          <img src="{{ 'story-sweats.jpg' | asset_url }}" alt="Sweats" class="w-full h-full rounded-full object-cover" loading="lazy">
+        </div>
+        <span class="text-[10.5px] font-bold text-[#111111] uppercase tracking-wider text-center">SWEATS</span>
+      </a>
+
+      <!-- Story 4: Pants -->
+      <a href="/collections/pants" class="story-circle-item flex flex-col items-center gap-1.5 shrink-0 w-[64px]">
+        <div class="w-[58px] h-[58px] rounded-full p-[2px] border-[1.5px] border-[#111111] bg-white flex items-center justify-center">
+          <img src="{{ 'story-pants.jpg' | asset_url }}" alt="Pants" class="w-full h-full rounded-full object-cover" loading="lazy">
+        </div>
+        <span class="text-[10.5px] font-bold text-[#111111] uppercase tracking-wider text-center">PANTS</span>
+      </a>
+
+      <!-- Story 5: Branches -->
+      <button type="button" data-branches-trigger class="story-circle-item flex flex-col items-center gap-1.5 shrink-0 w-[64px]">
+        <div class="w-[58px] h-[58px] rounded-full p-[2px] border-[1.5px] border-[#111111] bg-white flex items-center justify-center">
+          <img src="{{ 'story-branches.jpg' | asset_url }}" alt="Branches" class="w-full h-full rounded-full object-cover" loading="lazy">
+        </div>
+        <span class="text-[10.5px] font-bold text-[#111111] text-center">Our Stores</span>
+      </button>
+
+      <!-- Story 6: WhatsApp -->
+      <a href="https://wa.me/{{ settings.whatsapp_number | default: '201065052442' }}" target="_blank" rel="noopener" class="story-circle-item flex flex-col items-center gap-1.5 shrink-0 w-[64px]">
+        <div class="w-[58px] h-[58px] rounded-full p-[2px] border-[1.5px] border-emerald-600 bg-emerald-50 flex items-center justify-center text-emerald-600">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+        </div>
+        <span class="text-[10.5px] font-bold text-emerald-700 text-center">WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Story Highlights",
+  "tag": "section",
+  "class": "section-story-highlights",
+  "settings": []
+}
+{% endschema %}

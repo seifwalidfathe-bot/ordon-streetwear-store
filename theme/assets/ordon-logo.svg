@@ -1,0 +1,12 @@
+<svg viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="ordon-official-brand-svg">
+  <!-- Official ORDON Counter-Rotating Arrows Emblem -->
+  <g transform="translate(14, 8) scale(0.68)">
+    <!-- Top/Right Arrow Path -->
+    <path d="M50 8C34 8 20 18 14 32C12 37 18 40 22 36C27 26 38 18 50 18C64 18 76 28 78 42L72 38C68 35 64 38 66 43L74 61C76 65 81 65 83 61L94 48C97 44 94 39 89 40L83 41C81 22 67 8 50 8Z" fill="currentColor"/>
+    <!-- Bottom/Left Arrow Path -->
+    <path d="M50 92C66 92 80 82 86 68C88 63 82 60 78 64C73 74 62 82 50 82C36 82 24 72 22 58L28 62C32 65 36 62 34 57L26 39C24 35 19 35 17 39L6 52C3 56 6 61 11 60L17 59C19 78 33 92 50 92Z" fill="currentColor"/>
+  </g>
+  <!-- ORDON Wordmark in High-Fashion Roman Typography -->
+  <text x="86" y="47" fill="currentColor" font-family="'Cinzel', 'Playfair Display', 'Didot', 'Times New Roman', serif" font-weight="600" font-size="34" letter-spacing="4">ORDON</text>
+  <text x="88" y="60" fill="currentColor" opacity="0.6" font-family="'Cairo', sans-serif" font-weight="600" font-size="8.5" letter-spacing="2">EGYPT // EST. TANTA</text>
+</svg>

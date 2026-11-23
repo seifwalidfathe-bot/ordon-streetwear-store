@@ -1,0 +1,19 @@
+{%- comment -%}
+  ORDON EGYPT Brand Logo Snippet
+  Supports custom logo upload from theme settings or fallback to sharp brand SVG mark
+{%- endcomment -%}
+
+{%- if settings.custom_logo != blank -%}
+  <img
+    src="{{ settings.custom_logo | image_url: width: 400 }}"
+    alt="{{ shop.name | escape }}"
+    width="{{ settings.logo_width | default: 160 }}"
+    height="auto"
+    loading="eager"
+    class="ordon-logo-img object-contain"
+  >
+{%- else -%}
+  <div class="ordon-logo-wrap inline-flex items-center text-white" style="max-width: {{ settings.logo_width | default: 170 }}px;">
+    {% render 'ordon-logo.svg' %}
+  </div>
+{%- endif -%}

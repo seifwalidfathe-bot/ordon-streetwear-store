@@ -1,0 +1,32 @@
+{%- comment -%}
+  ORDON EGYPT — Collections List Section
+{%- endcomment -%}
+
+<section class="py-16 bg-[#08090d] text-slate-100 min-h-screen">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-12 text-center">
+      <div class="ice-badge mb-2"><span class="pulse-dot"></span> ARCHIVE DIRECTORY</div>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white">كل الكولكشنز</h1>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {%- for collection in collections -%}
+        <a href="{{ collection.url }}" class="group block rounded-xl overflow-hidden border border-slate-800 bg-[#10131a] p-6 hover:border-sky-500/40 transition-colors">
+          <h3 class="text-xl font-display font-bold text-white group-hover:text-sky-400 transition-colors">
+            {{ collection.title }}
+          </h3>
+          <p class="text-xs text-slate-400 mt-2 font-mono">
+            {{ collection.all_products_count }} قطعة متوفرة &rarr;
+          </p>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "List Collections",
+  "settings": []
+}
+{% endschema %}

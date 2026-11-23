@@ -1,0 +1,89 @@
+{%- comment -%}
+  ORDON EGYPT — Editorial Banner (Ozar Style)
+{%- endcomment -%}
+
+<section class="bg-[#fcfcfc] border-b border-[#e5e5e5] py-8 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+    
+    <!-- Text Column -->
+    <div class="lg:col-span-7 flex flex-col items-start text-right order-2 lg:order-1">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-[#e5e5e5] bg-white text-[11px] font-mono text-[#777777] font-bold mb-4 uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#111111]"></span>
+        <span>WINTER 2026 // NEW DROP</span>
+      </div>
+
+      <h1 class="font-bold text-4xl sm:text-6xl md:text-7xl uppercase tracking-tight text-[#111111] leading-[1.05]">
+        YOUR NEW<br>FAVORITES.
+      </h1>
+
+      <p class="mt-4 text-sm sm:text-base text-[#555555] max-w-xl leading-relaxed">
+        ستريت وير مصري بخامات قطن تقيل 100% طبيعي، قصات بوكسي مضبوطة، وتشطيب خياطة متين يتحمل الغسيل والاستخدام اليومي في شوارع مصر.
+      </p>
+
+      <div class="mt-8 flex flex-wrap items-center gap-3 w-full sm:w-auto">
+        <a href="#featured-collection" class="btn-ozar-primary w-full sm:w-auto text-center px-7 py-3.5 text-xs font-bold uppercase tracking-wider">
+          <span>EXPLORE THE DROP</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <button type="button" data-branches-trigger class="btn-ozar-outline w-full sm:w-auto text-center px-6 py-3.5 text-xs font-bold uppercase tracking-wider">
+          DELIVERY & BRANCHES
+        </button>
+      </div>
+
+      <!-- Telemetry Strip -->
+      <div class="mt-10 pt-6 border-t border-[#e5e5e5] grid grid-cols-3 gap-4 w-full max-w-lg text-xs">
+        <div>
+          <div class="font-mono font-bold text-base text-[#111111]">420 GSM</div>
+          <div class="text-[11px] text-[#777777] mt-0.5">ميلتون قطن شتوي</div>
+        </div>
+        <div>
+          <div class="font-mono font-bold text-base text-[#111111]">24-48H</div>
+          <div class="text-[11px] text-[#777777] mt-0.5">توصيل لكافة المحافظات</div>
+        </div>
+        <div>
+          <div class="font-mono font-bold text-base text-[#111111]">3 فروع</div>
+          <div class="text-[11px] text-[#777777] mt-0.5">Tanta • El-Mahalla • Kafr El-Sheikh</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Image Showcase -->
+    <div class="lg:col-span-5 order-1 lg:order-2">
+      <div class="relative mx-auto max-w-[400px] rounded-lg overflow-hidden border border-[#e5e5e5] bg-white shadow-sm group">
+        <img
+          src="{{ 'model-hero.jpg' | asset_url }}"
+          alt="ORDON Editorial Photoshoot"
+          class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+          loading="eager"
+        >
+        <div class="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur border border-[#e5e5e5] rounded flex items-center justify-between text-xs">
+          <div>
+            <div class="font-bold text-[#111111]">BORN TO BE ICONIC TEE</div>
+            <div class="text-[11px] font-mono text-[#777777] mt-0.5">LE 550.00 EGP</div>
+          </div>
+          <button
+            type="button"
+            data-quick-add
+            data-product-title="BORN TO BE ICONIC Boxy Tee"
+            data-product-price="550"
+            data-product-image="{{ 'product-iconic-tee.jpg' | asset_url }}"
+            class="px-3 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-[11px] font-bold rounded"
+          >
+            + أضف للسلة
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Editorial Banner",
+  "tag": "section",
+  "class": "section-editorial-banner",
+  "settings": []
+}
+{% endschema %}

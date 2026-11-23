@@ -1,0 +1,33 @@
+{%- comment -%}
+  ORDON EGYPT — Mobile Tab Dock (Ozar Minimal Style)
+{%- endcomment -%}
+
+<nav class="mobile-tab-dock" aria-label="Mobile Navigation">
+  <a href="/" class="dock-tab is-active">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+    <span>Home</span>
+  </a>
+
+  <a href="/collections/all" class="dock-tab">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+    <span>The Drop</span>
+  </a>
+
+  <button type="button" class="dock-tab relative" data-cart-trigger aria-label="Bag">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+    <span>Bag</span>
+    <span class="cart-counter-badge absolute top-1 left-2 w-4 h-4 rounded-full bg-[#111111] text-white text-[9px] font-mono font-bold flex items-center justify-center">
+      {{ cart.item_count }}
+    </span>
+  </button>
+
+  <button type="button" class="dock-tab" data-branches-trigger>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    <span>Stores</span>
+  </button>
+
+  <a href="https://wa.me/{{ settings.whatsapp_number | default: '201065052442' }}" target="_blank" rel="noopener" class="dock-tab text-emerald-600">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+</nav>

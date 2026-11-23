@@ -1,0 +1,63 @@
+{%- comment -%}
+  ORDON EGYPT — Main Cart Page Section
+{%- endcomment -%}
+
+<section class="py-16 bg-[#08090d] text-slate-100 min-h-screen">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-8">
+      <div class="ice-badge mb-2">
+        <span class="pulse-dot"></span> سلة المشتريات
+      </div>
+      <h1 class="text-3xl font-display font-black text-white">
+        تفاصيل سلتك (Your Bag)
+      </h1>
+    </div>
+
+    {%- if cart.item_count > 0 -%}
+      <form action="/cart" method="post" class="space-y-6">
+        <div class="divide-y divide-slate-800 border-y border-slate-800">
+          {%- for item in cart.items -%}
+            <div class="py-4 flex gap-4 items-center justify-between">
+              <div class="flex gap-4 items-center">
+                <img src="{{ item.image | image_url: width: 120 }}" alt="{{ item.title | escape }}" class="w-16 h-20 object-cover rounded bg-slate-900 border border-slate-800">
+                <div>
+                  <h3 class="font-bold text-sm text-white">{{ item.product.title }}</h3>
+                  <div class="text-xs text-slate-400 font-mono">{{ item.variant.title }}</div>
+                  <div class="text-xs font-display font-bold text-sky-400 mt-1">{{ item.price | money }}</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <input type="number" name="updates[]" value="{{ item.quantity }}" min="1" class="w-16 bg-slate-900 border border-slate-800 rounded px-2 py-1 text-center font-mono text-sm text-white">
+                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="text-rose-400 text-xs hover:underline">حذف</a>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+        <div class="flex items-center justify-between p-6 bg-slate-900/60 rounded-xl border border-slate-800">
+          <div>
+            <div class="text-xs text-slate-400">الإجمالي:</div>
+            <div class="text-2xl font-display font-black text-sky-400">{{ cart.total_price | money }}</div>
+          </div>
+          <div class="flex gap-3">
+            <button type="submit" name="update" class="btn-chilly-outline text-xs">تحديث الكميات</button>
+            <button type="submit" name="checkout" class="btn-chilly-primary text-sm">متابعة الشراء</button>
+          </div>
+        </div>
+      </form>
+    {%- else -%}
+      <div class="text-center py-24 border border-dashed border-slate-800 rounded-xl">
+        <p class="text-lg font-bold text-slate-300">سلتك فاضية حالياً</p>
+        <p class="text-xs text-slate-500 mt-1 mb-6">تصفح دروب الشتا واختار هوديك المفضل</p>
+        <a href="/" class="btn-chilly-primary text-xs">العودة للمتجر</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main Cart",
+  "settings": []
+}
+{% endschema %}

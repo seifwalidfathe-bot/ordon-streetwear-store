@@ -1,0 +1,43 @@
+{%- comment -%}
+  ORDON EGYPT — Main Search Section
+{%- endcomment -%}
+
+<section class="py-16 bg-[#08090d] text-slate-100 min-h-screen">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-10 text-center max-w-xl mx-auto">
+      <div class="ice-badge mb-2"><span class="pulse-dot"></span> SEARCH THE DROP</div>
+      <h1 class="text-3xl font-display font-black text-white">نتائج الSearch</h1>
+      <form action="/search" method="get" class="mt-6 flex gap-2">
+        <input
+          type="text"
+          name="q"
+          value="{{ search.terms | escape }}"
+          placeholder="اSearch عن هودي، تيشيرت، Cargo..."
+          class="flex-grow bg-slate-900 border border-slate-800 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-sky-400"
+        >
+        <button type="submit" class="btn-chilly-primary text-xs">Search</button>
+      </form>
+    </div>
+
+    {%- if search.performed -%}
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {%- for item in search.results -%}
+          {%- if item.object_type == 'product' -%}
+            {% render 'product-card', product: item %}
+          {%- endif -%}
+        {%- else -%}
+          <div class="col-span-full text-center py-20 text-slate-500 font-mono text-sm">
+            مفيش نتائج مطابقة لكلمة "{{ search.terms }}".
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Search",
+  "settings": []
+}
+{% endschema %}

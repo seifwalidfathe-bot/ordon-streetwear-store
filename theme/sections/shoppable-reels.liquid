@@ -1,0 +1,272 @@
+{%- comment -%}
+  ORDON EGYPT — Shoppable Instagram Reels with Video Playback (Ozar Minimal Style)
+{%- endcomment -%}
+
+<section class="py-12 sm:py-20 bg-white border-b border-[#e5e5e5]" id="shoppable-reels">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+          <span class="text-[11px] font-mono uppercase tracking-wider text-[#777777] font-bold">
+            REAL INSTAGRAM REELS // @{{ settings.instagram_handle | default: 'ordon.eg' }}
+          </span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-tight text-[#111111]">
+          REELS & FIT CHECKS IN MOTION
+        </h2>
+        <p class="text-xs sm:text-sm text-[#777777] mt-1">
+          شاهد فيديوهات التنسيقات والفيت تشيك الحقيقية من Instagram Account (اضغط للتشغيل أو كتم الصوت)
+        </p>
+      </div>
+
+      <a
+        href="https://instagram.com/{{ settings.instagram_handle | default: 'ordon.eg' }}"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 px-4 py-2 border border-[#111111] rounded text-xs font-bold uppercase hover:bg-[#111111] hover:text-white transition-colors w-fit"
+      >
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <span>FOLLOW @{{ settings.instagram_handle | default: 'ordon.eg' }} (19K)</span>
+      </a>
+    </div>
+
+    <!-- 4 Vertical Reel Cards with Real Video Playback -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+      
+      <!-- Reel 1 -->
+      <div class="reel-card group relative rounded-lg overflow-hidden bg-black aspect-[9/16] border border-[#e5e5e5] flex flex-col justify-between shadow-sm cursor-pointer" onclick="toggleReelPlay(this, event)">
+        <video
+          src="{{ 'reel-1-change-everything.mp4' | asset_url }}"
+          poster="{{ 'reel-1-change-everything.jpg' | asset_url }}"
+          playsinline
+          loop
+          muted
+          class="reel-video absolute inset-0 w-full h-full object-cover"
+        ></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+        
+        <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+          <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+            <span class="play-state-icon">▶</span> 48.2K
+          </span>
+          <button type="button" onclick="toggleMute(this, event)" class="w-6 h-6 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-[10px]" title="كتم / تشغيل الصوت">
+            <span class="sound-icon">🔇</span>
+          </button>
+        </div>
+
+        <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity">
+          <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+            ▶
+          </div>
+        </div>
+
+        <div class="relative z-10 p-3 text-white space-y-2">
+          <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+            "ORDON change every thing…. دروب الشتاء الجديد بوكسي فت"
+          </div>
+          <div class="flex items-center gap-1.5 pt-1">
+            <button
+              type="button"
+              onclick="addToCart('ORDON SIGNATURE BOX FIT TEE', 550, 'L', '{{ 'box-fit-tee-black_DfNDyP7DXOw.jpg' | asset_url }}'); event.stopPropagation();"
+              class="flex-1 py-1.5 bg-white hover:bg-neutral-100 text-[#111111] text-[10.5px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow"
+            >
+              <span>تسوق • 550 ج.م</span>
+            </button>
+            <a
+              href="https://www.instagram.com/reel/DfXku6_tbxU/"
+              target="_blank"
+              rel="noopener"
+              onclick="event.stopPropagation();"
+              class="w-7 h-7 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors"
+              title="فتح على إنستجرام"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 2 -->
+      <div class="reel-card group relative rounded-lg overflow-hidden bg-black aspect-[9/16] border border-[#e5e5e5] flex flex-col justify-between shadow-sm cursor-pointer" onclick="toggleReelPlay(this, event)">
+        <video
+          src="{{ 'reel-2-chilly-vibes.mp4' | asset_url }}"
+          poster="{{ 'reel-2-chilly-vibes.jpg' | asset_url }}"
+          playsinline
+          loop
+          muted
+          class="reel-video absolute inset-0 w-full h-full object-cover"
+        ></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+        
+        <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+          <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+            <span class="play-state-icon">▶</span> 34.1K
+          </span>
+          <button type="button" onclick="toggleMute(this, event)" class="w-6 h-6 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-[10px]" title="كتم / تشغيل الصوت">
+            <span class="sound-icon">🔇</span>
+          </button>
+        </div>
+
+        <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity">
+          <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+            ▶
+          </div>
+        </div>
+
+        <div class="relative z-10 p-3 text-white space-y-2">
+          <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+            "Chilly vibes without limits… تجربة ثقل ميلتون 420 GSM"
+          </div>
+          <div class="flex items-center gap-1.5 pt-1">
+            <button
+              type="button"
+              onclick="addToCart('CHILLY VIBES HEAVYWEIGHT HOODIE', 890, 'L', '{{ 'chilly-hoodie-heavy_Dezuk1XjUtZ.jpg' | asset_url }}'); event.stopPropagation();"
+              class="flex-1 py-1.5 bg-white hover:bg-neutral-100 text-[#111111] text-[10.5px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow"
+            >
+              <span>تسوق • 890 ج.م</span>
+            </button>
+            <a
+              href="https://www.instagram.com/reel/DY2Xe7at7vC/"
+              target="_blank"
+              rel="noopener"
+              onclick="event.stopPropagation();"
+              class="w-7 h-7 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors"
+              title="فتح على إنستجرام"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 3 -->
+      <div class="reel-card group relative rounded-lg overflow-hidden bg-black aspect-[9/16] border border-[#e5e5e5] flex flex-col justify-between shadow-sm cursor-pointer" onclick="toggleReelPlay(this, event)">
+        <video
+          src="{{ 'reel-3-winter-fit.mp4' | asset_url }}"
+          poster="{{ 'reel-3-winter-fit.jpg' | asset_url }}"
+          playsinline
+          loop
+          muted
+          class="reel-video absolute inset-0 w-full h-full object-cover"
+        ></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+        
+        <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+          <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+            <span class="play-state-icon">▶</span> 29.7K
+          </span>
+          <button type="button" onclick="toggleMute(this, event)" class="w-6 h-6 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-[10px]" title="كتم / تشغيل الصوت">
+            <span class="sound-icon">🔇</span>
+          </button>
+        </div>
+
+        <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity">
+          <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+            ▶
+          </div>
+        </div>
+
+        <div class="relative z-10 p-3 text-white space-y-2">
+          <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+            "Available now Color : 1 Size : M:2X دروب الشتاء الحصري"
+          </div>
+          <div class="flex items-center gap-1.5 pt-1">
+            <button
+              type="button"
+              onclick="addToCart('VINTAGE DROP OVERSIZED CREWNECK', 780, 'L', '{{ 'vintage-drop-crewneck_DfH_PWZDfzy.jpg' | asset_url }}'); event.stopPropagation();"
+              class="flex-1 py-1.5 bg-white hover:bg-neutral-100 text-[#111111] text-[10.5px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow"
+            >
+              <span>تسوق • 780 ج.م</span>
+            </button>
+            <a
+              href="https://www.instagram.com/reel/Dert_74tztY/"
+              target="_blank"
+              rel="noopener"
+              onclick="event.stopPropagation();"
+              class="w-7 h-7 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors"
+              title="فتح على إنستجرام"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reel 4 -->
+      <div class="reel-card group relative rounded-lg overflow-hidden bg-black aspect-[9/16] border border-[#e5e5e5] flex flex-col justify-between shadow-sm cursor-pointer" onclick="toggleReelPlay(this, event)">
+        <video
+          src="{{ 'reel-4-done-movement.mp4' | asset_url }}"
+          poster="{{ 'reel-4-done-movement.jpg' | asset_url }}"
+          playsinline
+          loop
+          muted
+          class="reel-video absolute inset-0 w-full h-full object-cover"
+        ></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+        
+        <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+          <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+            <span class="play-state-icon">▶</span> 22.4K
+          </span>
+          <button type="button" onclick="toggleMute(this, event)" class="w-6 h-6 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-[10px]" title="كتم / تشغيل الصوت">
+            <span class="sound-icon">🔇</span>
+          </button>
+        </div>
+
+        <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity">
+          <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+            ▶
+          </div>
+        </div>
+
+        <div class="relative z-10 p-3 text-white space-y-2">
+          <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+            "Done… استعراض قصات البوكسي فت في ستوديو أوردون"
+          </div>
+          <div class="flex items-center gap-1.5 pt-1">
+            <button
+              type="button"
+              onclick="addToCart('WIDE-LEG BAGGY DENIM JEANS', 850, '32', '{{ 'baggy-fit-denim-jeans_Dew0RQLDUD6.jpg' | asset_url }}'); event.stopPropagation();"
+              class="flex-1 py-1.5 bg-white hover:bg-neutral-100 text-[#111111] text-[10.5px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow"
+            >
+              <span>تسوق • 850 ج.م</span>
+            </button>
+            <a
+              href="https://www.instagram.com/reel/DdUyvGINRS_/"
+              target="_blank"
+              rel="noopener"
+              onclick="event.stopPropagation();"
+              class="w-7 h-7 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors"
+              title="فتح على إنستجرام"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shoppable Reels",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "REELS & FIT CHECKS IN MOTION"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shoppable Reels"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,44 @@
+{%- comment -%}
+  ORDON EGYPT — Footer Section (Ozar Minimal Style)
+  MANDATORY: English dir="ltr" per Global Rules
+{%- endcomment -%}
+
+<footer class="bg-white border-t border-[#e5e5e5] py-12 text-[#111111]" dir="ltr">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#e5e5e5]">
+      <div class="flex items-center gap-3">
+        <img src="{{ 'ordon-official-logo.jpg' | asset_url }}" alt="ORDON" class="w-8 h-8 rounded-full object-cover">
+        <div>
+          <span class="font-black text-lg tracking-widest text-[#111111]">ORDON<span class="text-xs text-[#777777]">.EGY</span></span>
+          <p class="text-xs text-[#777777]">Born To Be Iconic — Streetwear Egypt</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs font-bold uppercase tracking-wider text-[#777777]">
+        <a href="https://instagram.com/{{ settings.instagram_handle | default: 'ordon.eg' }}" target="_blank" rel="noopener" class="hover:text-[#111111]">Instagram</a>
+        <a href="https://wa.me/{{ settings.whatsapp_number | default: '201065052442' }}" target="_blank" rel="noopener" class="hover:text-[#111111]">WhatsApp</a>
+        <a href="https://facebook.com/profile.php?id=61587011244914" target="_blank" rel="noopener" class="hover:text-[#111111]">Facebook</a>
+      </div>
+    </div>
+
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#777777] gap-3">
+      <div>&copy; {{ 'now' | date: '%Y' }} ORDON EGYPT. Developed &amp; Designed by <a href="https://github.com/seifwalidfathe-bot" target="_blank" rel="noopener" class="font-bold underline hover:text-[#111111]">Seif Walid</a>. All rights reserved.</div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <a href="/policies/refund-policy" class="hover:underline">Return & Exchange Policy</a>
+        <span>•</span>
+        <a href="/policies/shipping-policy" class="hover:underline">Shipping Information</a>
+        <span>•</span>
+        <a href="/policies/terms-of-service" class="hover:underline">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "tag": "footer",
+  "class": "shopify-section-footer",
+  "settings": []
+}
+{% endschema %}

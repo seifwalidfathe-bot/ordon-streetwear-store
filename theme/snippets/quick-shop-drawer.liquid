@@ -1,0 +1,74 @@
+{%- comment -%}
+  ORDON EGYPT — Quick Shop Mobile Bottom Sheet (CRO & Native Phone UX)
+{%- endcomment -%}
+<div id="quick-shop-overlay" class="bottom-sheet-overlay" onclick="closeQuickShop()"></div>
+<div id="quick-shop-sheet" class="bottom-sheet p-5 text-right" aria-label="اختيار Size">
+  <!-- Drag Handle -->
+  <div class="w-12 h-1 bg-neutral-300 rounded-full mx-auto mb-4 cursor-pointer" onclick="closeQuickShop()"></div>
+
+  <!-- Product Snapshot Header -->
+  <div class="flex items-start gap-3 pb-4 border-b border-[#e5e5e5]">
+    <img id="qs-image" src="{{ 'box-fit-tee-black_DfNDyP7DXOw.jpg' | asset_url }}" alt="صورة المنتج" class="w-20 h-24 object-cover rounded bg-[#f7f7f7] border border-[#e5e5e5] flex-shrink-0" width="80" height="96">
+    <div class="flex-grow">
+      <span id="qs-spec" class="text-[10px] font-mono text-[#777777] uppercase block">BOX FIT • 100% COTTON</span>
+      <h4 id="qs-title" class="font-bold text-sm text-[#111111] uppercase mt-0.5 leading-tight">PRODUCT NAME</h4>
+      <div class="mt-2 flex items-baseline gap-2">
+        <span id="qs-price" class="font-mono font-black text-sm text-[#111111]">LE 550.00 EGP</span>
+        <span class="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold">In Stock</span>
+      </div>
+    </div>
+    <button type="button" onclick="closeQuickShop()" class="p-2 text-[#777777] hover:text-[#111111] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Close">
+      ✕
+    </button>
+  </div>
+
+  <!-- Size Selector -->
+  <div class="py-4 border-b border-[#e5e5e5]">
+    <div class="flex items-center justify-between mb-2">
+      <label class="text-xs font-bold text-[#111111]">Size المطلوب:</label>
+      <button type="button" onclick="openSizeModal()" class="text-[11px] font-bold text-[#777777] hover:text-[#111111] underline">دليل Sizeات 📐</button>
+    </div>
+
+    <div class="grid grid-cols-4 gap-2 mb-2" id="qs-size-grid">
+      <button type="button" class="size-pill" onclick="selectQuickSize(this, 'M')">M</button>
+      <button type="button" class="size-pill is-selected" onclick="selectQuickSize(this, 'L')">L</button>
+      <button type="button" class="size-pill" onclick="selectQuickSize(this, 'XL')">XL</button>
+      <button type="button" class="size-pill" onclick="selectQuickSize(this, '2XL')">2XL</button>
+    </div>
+
+    <p id="qs-fit-hint" class="text-[11px] text-[#777777]">
+      Size <strong class="text-[#111111]">L</strong> مناسب لوزن 70 إلى 85 كجم لمظهر بوكسي فضفاض مريح.
+    </p>
+  </div>
+
+  <!-- Quantity & CTA Buttons -->
+  <div class="pt-4 space-y-2.5">
+    <div class="flex items-center justify-between mb-1">
+      <span class="text-xs font-bold text-[#111111]">Quantity:</span>
+      <div class="flex items-center gap-3 border border-[#e5e5e5] rounded px-3 py-1 font-mono text-xs">
+        <button type="button" onclick="changeQsQty(-1)" class="text-[#777777] hover:text-[#111111] font-bold min-w-[28px] min-h-[28px]">-</button>
+        <span id="qs-qty" class="font-bold text-[#111111]">1</span>
+        <button type="button" onclick="changeQsQty(1)" class="text-[#777777] hover:text-[#111111] font-bold min-w-[28px] min-h-[28px]">+</button>
+      </div>
+    </div>
+
+    <button
+      type="button"
+      onclick="confirmQuickShopAdd()"
+      class="w-full py-3.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 min-h-[48px]"
+    >
+      <span>+ إضافة إلى Bag الآن</span>
+    </button>
+
+    <a
+      id="qs-whatsapp-btn"
+      href="https://wa.me/201065052442"
+      target="_blank"
+      rel="noopener"
+      class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded flex items-center justify-center gap-2 transition-colors min-h-[48px]"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+      <span>⚡ طلب فوري مباشر بهذا Size عبر WhatsApp</span>
+    </a>
+  </div>
+</div>

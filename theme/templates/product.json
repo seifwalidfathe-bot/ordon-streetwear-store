@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {}
+    },
+    "branches": {
+      "type": "branches-locator",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "branches"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "current": {
+    "brand_tagline": "Born To Be Iconic",
+    "instagram_handle": "ordon.eg",
+    "whatsapp_number": "201065052442",
+    "logo_width": 160,
+    "color_bg_main": "#ffffff",
+    "color_surface": "#fbfbfb",
+    "color_black": "#111111",
+    "color_border": "#e5e5e5",
+    "color_text_primary": "#111111",
+    "color_text_muted": "#777777",
+    "free_shipping_threshold": 2000,
+    "shipping_delta_cities": "24 - 48 ساعة (Tanta، El-Mahalla، Kafr El-Sheikh)",
+    "shipping_governorates": "48 - 72 ساعة لكل محافظات مصر",
+    "enable_cod_inspection": true,
+    "branch_1_name": "فرع Tanta (Tanta Branch)",
+    "branch_1_location": "شارع النحاس، تقاطع الفاتح، Tanta",
+    "branch_2_name": "فرع El-Mahalla El-Kubra (Mahalla Branch)",
+    "branch_2_location": "Shukri Al-Qawatli Street، أمام البنك الأهلي، El-Mahalla El-Kubra",
+    "branch_3_name": "فرع Kafr El-Sheikh (Kafr El-Sheikh Branch)",
+    "branch_3_location": "شارع المحكمة، عمارات الأوقاف، Kafr El-Sheikh"
+  }
+}

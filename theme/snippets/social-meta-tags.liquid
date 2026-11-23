@@ -1,0 +1,19 @@
+{%- comment -%}
+  Open Graph and Twitter Card metadata for ORDON EGYPT
+{%- endcomment -%}
+<meta property="og:site_name" content="{{ shop.name }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:title" content="{{ page_title | default: shop.name }}">
+<meta property="og:type" content="{% if template.name == 'product' %}product{% else %}website{% endif %}">
+<meta property="og:description" content="{{ page_description | default: 'ORDON EGYPT — Chilly vibes, Without limits. Streetwear & Heavyweight Hoodies' | escape }}">
+
+{%- if page_image -%}
+  <meta property="og:image" content="http:{{ page_image | image_url: width: 1200 }}">
+  <meta property="og:image:secure_url" content="https:{{ page_image | image_url: width: 1200 }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+{%- endif -%}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title | default: shop.name }}">
+<meta name="twitter:description" content="{{ page_description | default: 'ORDON EGYPT — Chilly vibes, Without limits' | escape }}">

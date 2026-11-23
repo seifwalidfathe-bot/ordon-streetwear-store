@@ -1,0 +1,26 @@
+{%- comment -%}
+  ORDON EGYPT — Main Page Section
+{%- endcomment -%}
+
+<section class="py-16 bg-[#08090d] text-slate-100 min-h-screen">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-8">
+      <div class="ice-badge mb-2">
+        <span class="pulse-dot"></span> ORDON INFO
+      </div>
+      <h1 class="text-3xl font-display font-black text-white">
+        {{ page.title }}
+      </h1>
+    </div>
+    <div class="prose prose-invert max-w-none text-slate-300 text-sm leading-relaxed">
+      {{ page.content }}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main Page",
+  "settings": []
+}
+{% endschema %}

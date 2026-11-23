@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <!-- SEO: Essential Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>ORDON EGYPT — Born To Be Iconic | Official Streetwear Store</title>
+  <meta name="description" content="Official store for ORDON EGYPT (@ordon.eg). Premium Egyptian streetwear crafted from 100% heavyweight combed cotton. 420 GSM boxy hoodies, oversized tees, relaxed cargos, and wide-leg baggy denim. Nationwide shipping with cash on delivery & inspection upon receipt. Flagship stores in Tanta, El-Mahalla, and Kafr El-Sheikh.">
+  <meta name="keywords" content="ordon egypt, streetwear egypt, heavyweight hoodie, boxy fit tee, cargo pants, baggy denim jeans, ordon streetwear, egypt streetwear brand, tanta, el mahalla, kafr el sheikh, winter streetwear 2026">
+  <meta name="author" content="Seif Walid">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="http://localhost:3456/">
+
+  <!-- OpenGraph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:3456/">
+  <meta property="og:title" content="ORDON EGYPT — Born To Be Iconic | Official Store">
+  <meta property="og:description" content="Premium Egyptian streetwear crafted from 100% heavyweight combed cotton in relaxed boxy cuts. Nationwide shipping with Cash on Delivery & try-on before payment.">
+  <meta property="og:image" content="http://localhost:3456/assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="1440">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="ORDON EGYPT">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ORDON EGYPT — Born To Be Iconic">
+  <meta name="twitter:description" content="Official store for ORDON EGYPT (@ordon.eg). Explore the Winter 2026 drop with nationwide express delivery & inspection on delivery.">
+  <meta name="twitter:image" content="http://localhost:3456/assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg">
+
+  <!-- Geo & Regional Meta Tags (Egypt / Delta) -->
+  <meta name="geo.region" content="EG-GH">
+  <meta name="geo.placename" content="Tanta, Gharbia, Egypt">
+  <meta name="geo.position" content="30.799368;31.000240">
+  <meta name="ICBM" content="30.799368, 31.000240">
+  <meta name="theme-color" content="#111111">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Geist + IBM Plex Sans Arabic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#111111',
+              charcoal: '#222222',
+              gray: '#777777',
+              border: '#e5e5e5',
+              surface: '#fcfcfc',
+              light: '#f5f5f5'
+            }
+          },
+          fontFamily: {
+            sans: ['"IBM Plex Sans Arabic"', 'Geist', 'sans-serif'],
+            'brand-en': ['Geist', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+            mono: ['"Geist Mono"', 'monospace'],
+            ar: ['"IBM Plex Sans Arabic"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Ozar-Specific Hairline & Crisp Streetwear Tokens */
+    :root {
+      --ozar-bg: #ffffff;
+      --ozar-text: #111111;
+      --ozar-muted: #777777;
+      --ozar-border: #e5e5e5;
+      --ozar-accent: #111111;
+    }
+
+    body {
+      background-color: var(--ozar-bg);
+      color: var(--ozar-text);
+      font-family: Geist, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      touch-action: manipulation;
+    }
+
+    /* Announcement Marquee */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(50%); }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      animation: marquee 25s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Product Card */
+    .product-card {
+      background: #ffffff;
+      border: 1px solid var(--ozar-border);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .product-card:hover {
+      border-color: #111111;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .product-image-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background-color: #f7f7f7;
+      overflow: hidden;
+    }
+    .product-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .product-card:hover .product-image-box img {
+      transform: scale(1.05);
+    }
+
+    /* Category Filter Tabs */
+    .cat-btn {
+      padding: 0.45rem 1.1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border-radius: 9999px;
+      border: 1px solid var(--ozar-border);
+      background: #ffffff;
+      color: var(--ozar-muted);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cat-btn.is-active, .cat-btn:hover {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    /* Reels Cards with Video */
+    .reel-card {
+      position: relative;
+      background: #000000;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 9 / 16;
+      border: 1px solid #e5e5e5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .reel-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+
+    /* Cart Drawer Slide-over */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .drawer-overlay.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .drawer-sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: auto;
+      width: 100%;
+      max-width: 420px;
+      background: #ffffff;
+      z-index: 1000;
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -8px 0 32px rgba(0, 0, 0, 0.15);
+    }
+    .drawer-sidebar.is-active {
+      transform: translateX(0);
+    }
+
+    /* Mobile Navigation Slide-Over Drawer */
+    .mobile-nav-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      z-index: 1050;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .mobile-nav-overlay.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .mobile-nav-sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: auto;
+      width: 86vw;
+      max-width: 380px;
+      background: #ffffff;
+      z-index: 1060;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 8px 0 32px rgba(0, 0, 0, 0.15);
+    }
+    .mobile-nav-sidebar.is-active {
+      transform: translateX(0);
+    }
+
+    /* Quick-Shop Mobile Bottom Sheet (CRO + Custom Mobile UX) */
+    .bottom-sheet-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      z-index: 1010;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .bottom-sheet-overlay.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .bottom-sheet {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 520px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      border: 1px solid var(--ozar-border);
+      border-bottom: none;
+      z-index: 1020;
+      transform: translateY(100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.15);
+    }
+    .bottom-sheet.is-active {
+      transform: translateY(0);
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1001;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .modal-backdrop.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Mobile Bottom Dock */
+    .mobile-dock {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 1px solid var(--ozar-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.4rem 0.25rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+      z-index: 900;
+    }
+    @media (min-width: 768px) {
+      .mobile-dock { display: none; }
+    }
+    .dock-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 700;
+      color: #777777;
+      min-width: 48px;
+      min-height: 48px;
+      padding: 0.25rem 0.5rem;
+      transition: transform 0.1s ease, color 0.15s ease;
+    }
+    .dock-btn:active {
+      transform: scale(0.92);
+    }
+    .dock-btn.is-active, .dock-btn:hover {
+      color: #111111;
+    }
+
+    /* Size Selector Pill Buttons */
+    .size-pill {
+      min-width: 44px;
+      min-height: 44px;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+      font-family: "Geist Mono", monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #111111;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .size-pill.is-selected {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    /* Privacy Consent Toast (GRC) */
+    .privacy-toast {
+      position: fixed;
+      bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+      left: 1rem;
+      right: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+      background: #111111;
+      color: #ffffff;
+      padding: 0.85rem 1.1rem;
+      border-radius: 8px;
+      z-index: 850;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 11px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    @media (min-width: 768px) {
+      .privacy-toast {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        left: auto;
+        margin: 0;
+      }
+    }
+
+    /* Floating Cart Added Notification Toast (Non-Intrusive Mobile & Desktop UX) */
+    .cart-toast {
+      position: fixed;
+      top: calc(4.75rem + env(safe-area-inset-top, 0px));
+      left: 1rem;
+      right: 1rem;
+      max-width: 440px;
+      margin: 0 auto;
+      background: #111111;
+      color: #ffffff;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #333333;
+      z-index: 1080;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.35);
+      opacity: 0;
+      transform: translateY(-16px) scale(0.96);
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .cart-toast.is-active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+    @media (min-width: 768px) {
+      .cart-toast {
+        top: 5.5rem;
+        right: 2rem;
+        left: auto;
+        margin: 0;
+      }
+    }
+
+    @keyframes cartBadgePop {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.35); }
+      100% { transform: scale(1); }
+    }
+    .animate-badge-pop {
+      animation: cartBadgePop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  </style>
+
+  <!-- SEO: Structured Data Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ClothingStore",
+        "@id": "http://localhost:3456/#store",
+        "name": "ORDON EGYPT",
+        "alternateName": "ORDON Streetwear",
+        "url": "http://localhost:3456/",
+        "logo": "http://localhost:3456/assets/ordon-logo-black.png",
+        "image": "http://localhost:3456/assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg",
+        "description": "Official store for ORDON EGYPT streetwear crafted from 100% heavyweight Egyptian combed cotton.",
+        "telephone": "+201065052442",
+        "priceRange": "$$",
+        "currenciesAccepted": "EGP",
+        "paymentAccepted": "Cash on Delivery, Cash",
+        "openingHours": "Mo-Su 12:00-24:00",
+        "sameAs": [
+          "https://www.instagram.com/ordon.eg/",
+          "https://www.facebook.com/profile.php?id=61587011244914",
+          "https://linktr.ee/ordon.egypt"
+        ],
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Hassan St. & Al-Amin Intersection",
+            "addressLocality": "Tanta",
+            "addressRegion": "Gharbia",
+            "addressCountry": "EG"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Shukri Al-Qawatli Street",
+            "addressLocality": "El Mahalla El Kubra",
+            "addressRegion": "Gharbia",
+            "addressCountry": "EG"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Al-Nabawi Al-Muhandis Street",
+            "addressLocality": "Kafr El Sheikh",
+            "addressRegion": "Kafr El Sheikh",
+            "addressCountry": "EG"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:3456/#website",
+        "url": "http://localhost:3456/",
+        "name": "ORDON EGYPT",
+        "inLanguage": "ar-EG",
+        "publisher": {
+          "@id": "http://localhost:3456/#store"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "http://localhost:3456/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "http://localhost:3456/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Winter 2026 Drop",
+            "item": "http://localhost:3456/#featured"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I inspect and try on the garments before paying the courier?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, absolutely. We provide full inspection and try-on upon delivery before paying the courier, in accordance with Egyptian Consumer Protection Law."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does shipping take across Egypt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Delivery takes 24 to 48 hours for Cairo, Giza, and Delta governorates, and 2 to 3 business days for other governorates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ORDON's exchange and return policy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can exchange or return unworn items within 14 days of delivery, plus an immediate free replacement warranty against manufacturing defects for 30 days."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="pb-20 md:pb-0">
+
+  <!-- 1. Top Announcement Bar (Ticker with Free Shipping & Bio Telemetry) -->
+  <aside aria-label="Promotional Announcement Bar" class="bg-[#111111] text-white text-[11px] font-mono tracking-widest uppercase overflow-hidden border-b border-[#222222] py-2 relative z-50">
+    <div class="whitespace-nowrap flex animate-marquee">
+      <span class="mx-6 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+        CHILLY VIBES, WITHOUT LIMITS • FREE NATIONWIDE SHIPPING ON ORDERS OVER LE 2,000
+      </span>
+      <span class="mx-6 text-neutral-400">///</span>
+      <span class="mx-6 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+        19K COMMUNITY ON INSTAGRAM @ORDON.EG • FLAGSHIP STORES: TANTA • EL-MAHALLA • KAFR EL-SHEIKH
+      </span>
+      <span class="mx-6 text-neutral-400">///</span>
+      <span class="mx-6 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
+        TRY BEFORE YOU PAY • INSPECT & FIT WITH COURIER BEFORE PAYMENT (CASH ON DELIVERY)
+      </span>
+      <span class="mx-6 text-neutral-400">///</span>
+    </div>
+  </aside>
+
+  <!-- 2. Clean Minimal Header (Fully Responsive + Pure Typographic Identity) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-[#e5e5e5] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
+      
+      <!-- Right (Start in RTL): Mobile Hamburger Button + Desktop Navigation Links -->
+      <div class="flex items-center gap-2 lg:gap-6 flex-shrink-0">
+        <!-- Mobile/Tablet Hamburger Drawer Toggle (< 1024px) -->
+        <button
+          type="button"
+          onclick="openMobileNav()"
+          class="lg:hidden p-2 text-[#111111] hover:text-[#777777] transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center -mr-2"
+          aria-label="Open main menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        <!-- Desktop Navigation Links (>= 1024px) -->
+        <nav aria-label="Main Navigation" class="hidden lg:flex items-center gap-5 xl:gap-7 text-xs font-brand-en font-bold uppercase tracking-wider text-[#111111]">
+          <a href="#featured" class="hover:text-[#777777] transition-colors py-2">THE DROP</a>
+          <a href="#reels" class="hover:text-[#777777] transition-colors py-2">REELS // FIT</a>
+          <a href="#lookbook" class="hover:text-[#777777] transition-colors py-2">LOOKBOOK</a>
+          <button type="button" onclick="openBranchesModal()" class="hover:text-[#777777] transition-colors uppercase py-2">BRANCHES (3)</button>
+          <button type="button" onclick="openSizeModal()" class="hover:text-[#777777] transition-colors uppercase py-2">SIZE GUIDE</button>
+          <button type="button" onclick="openGrcModal()" class="hover:text-[#777777] transition-colors uppercase text-[11px] font-mono text-neutral-500 py-2">CONSUMER RIGHTS</button>
+        </nav>
+      </div>
+
+      <!-- Center: Pure Typographic Brand Wordmark (Zero Logo Icon) -->
+      <div class="flex-grow flex items-center justify-center text-center px-2">
+        <a href="#" class="inline-flex items-baseline py-2 group select-none" aria-label="ORDON EGYPT Homepage">
+          <span class="font-brand-en font-black text-xl sm:text-2xl lg:text-2xl tracking-[0.22em] text-[#111111] group-hover:opacity-80 transition-opacity">ORDON</span><span class="text-xs text-[#777777] font-semibold tracking-normal mr-1">.EGY</span>
+        </a>
+      </div>
+
+      <!-- Left (End in RTL): Action Icons (Search, Instagram, Branches, Cart) -->
+      <div class="flex items-center gap-1 sm:gap-2 lg:gap-3 flex-shrink-0">
+        <!-- Quick Search Toggle Button -->
+        <button
+          type="button"
+          onclick="toggleSearchInput()"
+          class="p-2 text-[#111111] hover:text-[#777777] transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          title="Search products"
+          aria-label="Search"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <!-- Instagram Badge (hidden on mobile, visible on sm+) -->
+        <a
+          href="https://instagram.com/ordon.eg"
+          target="_blank"
+          rel="noopener"
+          class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded border border-[#e5e5e5] text-xs font-brand-en font-bold uppercase text-[#111111] hover:bg-[#111111] hover:text-white transition-colors"
+          title="Official Instagram @ordon.eg"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span class="hidden xl:inline">@ORDON.EG</span>
+        </a>
+
+        <!-- Physical Branches Trigger -->
+        <button
+          type="button"
+          onclick="openBranchesModal()"
+          class="p-2 text-[#111111] hover:text-[#777777] transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          title="Official Flagship Stores"
+          aria-label="Stores"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </button>
+
+        <!-- Cart Bag Trigger with Real-Time Counter -->
+        <button
+          type="button"
+          onclick="openCart()"
+          class="relative p-2 text-[#111111] hover:text-[#777777] transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          aria-label="Shopping Bag"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span id="header-cart-badge" class="absolute top-1.5 left-1.5 w-4 h-4 rounded-full bg-[#111111] text-white text-[9px] font-mono font-bold flex items-center justify-center">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Collapsible Mobile Search Input Bar -->
+    <div id="mobile-search-bar" class="hidden px-4 pb-3 pt-1 border-t border-[#f0f0f0] bg-white">
+      <div class="relative max-w-xl mx-auto">
+        <input
+          type="search"
+          id="product-search-input"
+          oninput="handleSearch(this.value)"
+          placeholder="Search hoodies, boxy tees, cargos, or baggy jeans..."
+          class="w-full pl-10 pr-4 py-2.5 text-xs bg-[#f8f8f8] border border-[#e5e5e5] rounded text-[#111111] focus:outline-none focus:border-[#111111] font-sans"
+        >
+        <svg class="absolute left-3 top-3 text-[#777777]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Over Navigation Drawer (Phone Custom Experience) -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay" onclick="closeMobileNav()"></div>
+  <aside id="mobile-nav-sidebar" class="mobile-nav-sidebar" aria-label="Mobile Navigation Drawer" dir="ltr">
+    <!-- Drawer Top Bar -->
+    <div class="p-4 border-b border-[#e5e5e5] flex items-center justify-between">
+      <div class="flex items-baseline">
+        <span class="font-brand-en font-black text-xl tracking-[0.2em] text-[#111111]">ORDON</span>
+        <span class="text-xs text-[#777777] font-semibold mr-1">.EGY</span>
+      </div>
+      <button
+        type="button"
+        onclick="closeMobileNav()"
+        class="p-2 text-[#777777] hover:text-[#111111] min-w-[44px] min-h-[44px] flex items-center justify-center rounded hover:bg-neutral-100 transition-colors"
+        aria-label="Close menu"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Quick Search Field in Drawer -->
+    <div class="p-4 border-b border-[#f0f0f0] bg-[#fafafa]">
+      <div class="relative">
+        <input
+          type="search"
+          oninput="handleSearch(this.value); if(this.value.trim().length > 1) { closeMobileNav(); window.location.hash = '#featured'; }"
+          placeholder="Search collection..."
+          class="w-full pl-9 pr-3.5 py-2.5 text-xs bg-white border border-[#e5e5e5] rounded text-[#111111] focus:outline-none focus:border-[#111111] font-sans"
+        >
+        <svg class="absolute left-3 top-3 text-[#777777]" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </div>
+    </div>
+
+    <!-- Navigation Links List -->
+    <div class="flex-grow overflow-y-auto p-4 space-y-1">
+      <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#999999] px-3 pb-2 pt-1">EXPLORE COLLECTION</div>
+
+      <a href="#featured" onclick="closeMobileNav()" class="flex items-center justify-between p-3 rounded hover:bg-neutral-100 transition-colors text-sm font-bold text-[#111111]">
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-[#111111]"></span>
+          <span>THE DROP (Winter 26 Release)</span>
+        </div>
+        <span class="text-xs font-mono text-[#777777]">&larr;</span>
+      </a>
+
+      <a href="#reels" onclick="closeMobileNav()" class="flex items-center justify-between p-3 rounded hover:bg-neutral-100 transition-colors text-sm font-bold text-[#111111]">
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+          <span>REELS // FIT (1080p Live Motion)</span>
+        </div>
+        <span class="text-[10px] bg-rose-50 text-rose-700 px-1.5 py-0.5 rounded font-mono font-bold">1080p</span>
+      </a>
+
+      <a href="#lookbook" onclick="closeMobileNav()" class="flex items-center justify-between p-3 rounded hover:bg-neutral-100 transition-colors text-sm font-bold text-[#111111]">
+        <div class="flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-neutral-400"></span>
+          <span>LOOKBOOK (Streetwear Styling)</span>
+        </div>
+        <span class="text-xs font-mono text-[#777777]">&larr;</span>
+      </a>
+
+      <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-[#999999] px-3 pb-2 pt-4">STORES & SUPPORT</div>
+
+      <button type="button" onclick="closeMobileNav(); openBranchesModal();" class="w-full flex items-center justify-between p-3 rounded hover:bg-neutral-100 transition-colors text-sm font-bold text-[#111111] text-left">
+        <div class="flex items-center gap-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Our Flagship Stores</span>
+        </div>
+        <span class="text-xs font-mono text-[#777777]">3 Stores</span>
+      </button>
+
+      <button type="button" onclick="closeMobileNav(); openSizeModal();" class="w-full flex items-center justify-between p-3 rounded hover:bg-neutral-100 transition-colors text-sm font-bold text-[#111111] text-left">
+        <div class="flex items-center gap-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+          <span>Official Size Guide</span>
+        </div>
+        <span class="text-xs text-[#777777]">📐 Weight Chart</span>
+      </button>
+
+      <button type="button" onclick="closeMobileNav(); openGrcModal();" class="w-full flex items-center justify-between p-3 rounded hover:bg-neutral-100 transition-colors text-sm font-bold text-[#111111] text-left">
+        <div class="flex items-center gap-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>Consumer Rights & Guarantee</span>
+        </div>
+        <span class="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded">Law 181</span>
+      </button>
+    </div>
+
+    <!-- Drawer Footer Actions -->
+    <div class="p-4 border-t border-[#e5e5e5] bg-[#fafafa] space-y-2.5">
+      <a
+        href="https://wa.me/201065052442"
+        target="_blank"
+        rel="noopener"
+        class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded flex items-center justify-center gap-2 transition-colors min-h-[44px]"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+        <span>⚡ Instant WhatsApp Order</span>
+      </a>
+
+      <a
+        href="https://instagram.com/ordon.eg"
+        target="_blank"
+        rel="noopener"
+        class="w-full py-2.5 px-4 bg-white border border-[#e5e5e5] hover:bg-neutral-100 text-[#111111] text-xs font-brand-en font-bold uppercase rounded flex items-center justify-center gap-2 transition-colors min-h-[44px]"
+      >
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        <span>@ORDON.EG (19K Community)</span>
+      </a>
+
+      <div class="text-[10px] text-center text-[#777777] pt-1">
+        Try Before You Pay • 14-Day Free Exchange
+      </div>
+    </div>
+  </aside>
+        <svg class="absolute left-3 top-3 text-[#777777]" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- 4. CRO Trust Signal Strip (Egyptian Market Triggers) -->
+  <section aria-label="Buyer Benefits and Guarantees" class="bg-white border-b border-[#e5e5e5] py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 text-left">
+        
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 text-[#111111]">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-[#111111]">TRY BEFORE YOU PAY</div>
+            <div class="text-[10.5px] text-[#777777]">Inspect & fit with courier before payment</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 text-[#111111]">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-[#111111]">24-48H FAST SHIPPING</div>
+            <div class="text-[10.5px] text-[#777777]">Nationwide delivery & Cash on Delivery</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 text-[#111111]">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-[#111111]">14-DAY FREE RETURNS</div>
+            <div class="text-[10.5px] text-[#777777]">Egyptian Consumer Protection Law 181</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 text-[#111111]">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-[#111111]">IN-STORE PICKUP</div>
+            <div class="text-[10.5px] text-[#777777]">Tanta • El-Mahalla • Kafr El-Sheikh</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Hero Section: Editorial Photoshoot (Genuine 1080x1440 Shot from @ordon.eg) -->
+  <section aria-label="Hero Banner" class="bg-[#fcfcfc] border-b border-[#e5e5e5] py-8 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      
+      <!-- Text & Brand Statement -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left order-2 lg:order-1">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded border border-[#e5e5e5] bg-white text-[11px] font-mono text-[#777777] font-bold mb-4 uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#111111]"></span>
+          <span>CHILLY VIBES, WITHOUT LIMITS // @ORDON.EG</span>
+        </div>
+
+        <h1 class="font-brand-en font-black text-4xl sm:text-6xl md:text-7xl uppercase tracking-tight text-[#111111] leading-[1.05]">
+          YOUR NEW<br>FAVORITES.
+        </h1>
+
+        <p class="mt-4 text-sm sm:text-base text-[#555555] max-w-xl leading-relaxed">
+          Official Egyptian streetwear by ORDON. 100% pre-shrunk heavyweight cotton, tailored boxy drop shoulders, and reinforced construction built to endure daily wear.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <a href="#featured" class="px-7 py-3.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold font-brand-en uppercase tracking-wider rounded transition-colors flex items-center gap-2 min-h-[44px]">
+            <span>EXPLORE THE DROP</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+
+          <button type="button" onclick="openBranchesModal()" class="px-6 py-3.5 bg-white hover:bg-neutral-50 text-[#111111] border border-[#111111] text-xs font-bold font-brand-en uppercase tracking-wider rounded transition-colors min-h-[44px]">
+            DELIVERY & BRANCHES
+          </button>
+        </div>
+
+        <!-- Telemetry Strip -->
+        <div class="mt-10 pt-6 border-t border-[#e5e5e5] grid grid-cols-3 gap-4 w-full max-w-lg text-xs">
+          <div>
+            <div class="font-mono font-bold text-base text-[#111111]">420 GSM</div>
+            <div class="text-[11px] text-[#777777] mt-0.5">Winter Heavyweight Fleece</div>
+          </div>
+          <div>
+            <div class="font-mono font-bold text-base text-[#111111]">24-48H</div>
+            <div class="text-[11px] text-[#777777] mt-0.5">Nationwide Express Delivery</div>
+          </div>
+          <div>
+            <div class="font-mono font-bold text-base text-[#111111]">3 Stores</div>
+            <div class="text-[11px] text-[#777777] mt-0.5">Tanta • El-Mahalla • Kafr El-Sheikh</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Photoshoot Editorial Showcase (Post Dezuk1XjUtZ) -->
+      <div class="lg:col-span-5 order-1 lg:order-2">
+        <div class="relative mx-auto max-w-[400px] rounded-lg overflow-hidden border border-[#e5e5e5] bg-white shadow-sm group">
+          <img
+            src="assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg"
+            alt="ORDON — CHILLY VIBES HEAVYWEIGHT HOODIE"
+            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+            loading="eager"
+            width="1080"
+            height="1440"
+          >
+          <div class="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur border border-[#e5e5e5] rounded flex items-center justify-between text-xs">
+            <div>
+              <div class="font-brand-en font-bold text-[#111111]">CHILLY VIBES HOODIE</div>
+              <div class="text-[11px] font-mono text-[#777777] mt-0.5">LE 890.00 EGP</div>
+            </div>
+            <button
+              type="button"
+              onclick="openQuickShop('CHILLY VIBES HEAVYWEIGHT HOODIE', 890, 'assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg', '420 GSM FLEECE • 3 COLORS')"
+              class="px-3.5 py-2 bg-[#111111] hover:bg-[#333333] text-white text-[11px] font-bold rounded min-h-[44px]"
+            >
+              + SELECT SIZE
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. Shop by Collection (Ozar Minimal Clean Banners) -->
+  <section aria-label="Clothing Categories" class="py-12 bg-white border-b border-[#e5e5e5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl sm:text-2xl font-brand-en font-bold uppercase tracking-tight text-[#111111]">
+          SHOP BY COLLECTION
+        </h2>
+        <a href="#featured" class="text-xs font-bold font-brand-en uppercase text-[#777777] hover:text-[#111111]">
+          VIEW ALL &larr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <!-- Collection 1: Hoodies -->
+        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('hoodie')">
+          <img src="assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg" alt="HOODIES & FLEECE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 right-3 left-3 text-white">
+            <div class="font-brand-en font-black text-sm uppercase">HOODIES</div>
+            <div class="text-[10px] text-neutral-300 font-mono">420 GSM FLEECE</div>
+          </div>
+        </div>
+
+        <!-- Collection 2: Boxy Tees -->
+        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('tee')">
+          <img src="assets/box-fit-tee-black_DfNDyP7DXOw.jpg" alt="BOXY TEES" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 right-3 left-3 text-white">
+            <div class="font-brand-en font-black text-sm uppercase">ICONIC TEES</div>
+            <div class="text-[10px] text-neutral-300 font-mono">280 GSM BOXY FIT</div>
+          </div>
+        </div>
+
+        <!-- Collection 3: Baggy Jeans & Pants -->
+        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('pants')">
+          <img src="assets/baggy-fit-denim-jeans_Dew0RQLDUD6.jpg" alt="WIDE-LEG BAGGY DENIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 right-3 left-3 text-white">
+            <div class="font-brand-en font-black text-sm uppercase">BAGGY DENIM</div>
+            <div class="text-[10px] text-neutral-300 font-mono">WIDE LEG FIT</div>
+          </div>
+        </div>
+
+        <!-- Collection 4: Sweatshirts & Knit -->
+        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('hoodie')">
+          <img src="assets/round-collection-sweater_DeJ13LmDcy3.jpg" alt="KNIT SWEATERS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-3 right-3 left-3 text-white">
+            <div class="font-brand-en font-black text-sm uppercase">ROUND KNIT</div>
+            <div class="text-[10px] text-neutral-300 font-mono">SWEATER DROP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Featured Products: THE LATEST DROP (10 Genuine Instagram Photos from @ordon.eg) -->
+  <section id="featured" aria-label="The Latest Drop" class="py-12 sm:py-20 bg-[#fafafa] border-b border-[#e5e5e5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header & Filter Tabs -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-[11px] font-mono uppercase tracking-wider text-[#777777] font-bold block mb-1">
+            OFFICIAL INSTAGRAM CATALOG // WINTER 2026
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-brand-en font-black uppercase tracking-tight text-[#111111]">
+            THE LATEST DROP
+          </h2>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+          <button class="cat-btn is-active" data-cat="all" onclick="filterCategory('all')">ALL (10)</button>
+          <button class="cat-btn" data-cat="tee" onclick="filterCategory('tee')">TEES</button>
+          <button class="cat-btn" data-cat="hoodie" onclick="filterCategory('hoodie')">HOODIES & SWEATS</button>
+          <button class="cat-btn" data-cat="pants" onclick="filterCategory('pants')">JEANS & PANTS</button>
+        </div>
+      </div>
+
+      <!-- 2-Column Mobile Grid, 4-Column Desktop Grid (Ozar Style) -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6" id="product-grid">
+        
+        <!-- Product 1: ORDON SIGNATURE BOX FIT TEE -->
+        <article class="product-card group" data-category="tee" data-title="ordon signature box fit tee">
+          <div class="product-image-box">
+            <img src="assets/box-fit-tee-black_DfNDyP7DXOw.jpg" alt="ORDON SIGNATURE BOX FIT TEE" loading="lazy" width="1080" height="1440">
+            <div class="absolute top-2 right-2">
+              <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">NEW IN</span>
+            </div>
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">BOX FIT • 2 COLORS • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                ORDON SIGNATURE BOX FIT TEE
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 550.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 700.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('ORDON SIGNATURE BOX FIT TEE', 550, 'assets/box-fit-tee-black_DfNDyP7DXOw.jpg', 'BOX FIT • 2 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Box Fit Tee"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: CHILLY VIBES Heavy Hoodie -->
+        <article class="product-card group" data-category="hoodie" data-title="chilly vibes heavyweight hoodie">
+          <div class="product-image-box">
+            <img src="assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg" alt="CHILLY VIBES HEAVYWEIGHT HOODIE" loading="lazy" width="1080" height="1440">
+            <div class="absolute top-2 right-2">
+              <span class="bg-rose-600 text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">HOT DROP</span>
+            </div>
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">420 GSM FLEECE • 3 COLORS</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                CHILLY VIBES HEAVY HOODIE
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 890.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 1,150.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('CHILLY VIBES HEAVYWEIGHT HOODIE', 890, 'assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg', '420 GSM FLEECE • 3 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Chilly Vibes Hoodie"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: VINTAGE DROP OVERSIZED CREWNECK -->
+        <article class="product-card group" data-category="hoodie" data-title="vintage drop oversized crewneck">
+          <div class="product-image-box">
+            <img src="assets/vintage-drop-crewneck_DfH_PWZDfzy.jpg" alt="VINTAGE DROP OVERSIZED CREWNECK" loading="lazy" width="1080" height="1440">
+            <div class="absolute top-2 right-2">
+              <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">POPULAR</span>
+            </div>
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">WASHED FINISH • 2 COLORS</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                VINTAGE DROP CREWNECK
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 780.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 950.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('VINTAGE DROP OVERSIZED CREWNECK', 780, 'assets/vintage-drop-crewneck_DfH_PWZDfzy.jpg', 'WASHED FINISH • 2 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Vintage Crewneck"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: WIDE-LEG BAGGY DENIM JEANS -->
+        <article class="product-card group" data-category="pants" data-title="wide-leg baggy denim jeans">
+          <div class="product-image-box">
+            <img src="assets/baggy-fit-denim-jeans_Dew0RQLDUD6.jpg" alt="WIDE-LEG BAGGY DENIM JEANS" loading="lazy" width="1080" height="1440">
+            <div class="absolute top-2 right-2">
+              <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">TRENDING</span>
+            </div>
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">BAGGY FIT • SIZES 30:38</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                WIDE-LEG BAGGY DENIM JEANS
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 850.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 1,100.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('WIDE-LEG BAGGY DENIM JEANS', 850, 'assets/baggy-fit-denim-jeans_Dew0RQLDUD6.jpg', 'BAGGY FIT • 100% COTTON')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Baggy Denim Jeans"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5: MINIMALIST EARTH TONE BOXY TEE -->
+        <article class="product-card group" data-category="tee" data-title="minimalist earth tone boxy tee">
+          <div class="product-image-box">
+            <img src="assets/minimal-terracotta-tee_DekW3maDZjV.jpg" alt="MINIMALIST GRAPHIC BOXY TEE" loading="lazy" width="1080" height="1440">
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">280 GSM • 3 COLORS • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                MINIMALIST EARTH BOXY TEE
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 590.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 750.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('MINIMALIST EARTH BOXY TEE', 590, 'assets/minimal-terracotta-tee_DekW3maDZjV.jpg', '280 GSM • 3 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Earth Tone Tee"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6: TACTICAL RELAXED CARGO PANTS -->
+        <article class="product-card group" data-category="pants" data-title="tactical relaxed cargo pants">
+          <div class="product-image-box">
+            <img src="assets/tactical-cargo-grey_DfFLmpYDcrG.jpg" alt="TACTICAL RELAXED CARGO PANTS" loading="lazy" width="1080" height="1440">
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">6 POCKETS • 3 COLORS • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                TACTICAL RELAXED CARGO
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 820.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 1,050.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('TACTICAL RELAXED CARGO', 820, 'assets/tactical-cargo-grey_DfFLmpYDcrG.jpg', '6 POCKETS • 3 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Tactical Cargo Pants"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7: ROUND COLLECTION KNIT SWEATER -->
+        <article class="product-card group" data-category="hoodie" data-title="round collection knit sweater">
+          <div class="product-image-box">
+            <img src="assets/round-collection-sweater_DeJ13LmDcy3.jpg" alt="ROUND COLLECTION KNIT SWEATER" loading="lazy" width="1080" height="1440">
+            <div class="absolute top-2 right-2">
+              <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">LIMITED</span>
+            </div>
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">ROUND DROP • BOX FIT • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                ROUND COLLECTION SWEATER
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 890.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 1,150.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('ROUND COLLECTION SWEATER', 890, 'assets/round-collection-sweater_DeJ13LmDcy3.jpg', 'ROUND DROP • BOX FIT')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Round Knit Sweater"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8: REGULAR BOX FIT HEAVY HOODIE -->
+        <article class="product-card group" data-category="hoodie" data-title="regular box fit heavy hoodie">
+          <div class="product-image-box">
+            <img src="assets/oversized-box-hoodie_DfK8JDlDZ1o.jpg" alt="REGULAR BOX FIT HEAVY HOODIE" loading="lazy" width="1080" height="1440">
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">HEAVY FLEECE • 2 COLORS • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                REGULAR BOX FIT HOODIE
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 920.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 1,200.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('REGULAR BOX FIT HOODIE', 920, 'assets/oversized-box-hoodie_DfK8JDlDZ1o.jpg', 'HEAVY FLEECE • 2 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Regular Box Hoodie"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9: ICONIC REGULAR STREET TEE -->
+        <article class="product-card group" data-category="tee" data-title="iconic regular street tee">
+          <div class="product-image-box">
+            <img src="assets/regular-fit-iconic-tee_DfhU1hEjdks.jpg" alt="ICONIC REGULAR STREET TEE" loading="lazy" width="1080" height="1440">
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">REGULAR FIT • 2 COLORS • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                ICONIC REGULAR STREET TEE
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 550.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 700.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('ICONIC REGULAR STREET TEE', 550, 'assets/regular-fit-iconic-tee_DfhU1hEjdks.jpg', 'REGULAR FIT • 2 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Iconic Regular Tee"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 10: SIGNATURE HEAVY FLEECE ZIP JACKET -->
+        <article class="product-card group" data-category="hoodie" data-title="signature heavy fleece zip jacket">
+          <div class="product-image-box">
+            <img src="assets/signature-heavy-fleece_DcQ6bdhDW0x.jpg" alt="SIGNATURE HEAVY FLEECE ZIP JACKET" loading="lazy" width="1080" height="1440">
+            <div class="absolute top-2 right-2">
+              <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">EXCLUSIVE</span>
+            </div>
+          </div>
+          <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
+            <div>
+              <div class="text-[10px] text-[#777777] font-mono uppercase">HEAVY FLEECE • 3 COLORS • M-XXL</div>
+              <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+                SIGNATURE HEAVY FLEECE JACKET
+              </h3>
+            </div>
+            <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+              <div>
+                <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">LE 950.00 EGP</span>
+                <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">LE 1,250.00</span>
+              </div>
+              <button
+                type="button"
+                onclick="openQuickShop('SIGNATURE HEAVY FLEECE JACKET', 950, 'assets/signature-heavy-fleece_DcQ6bdhDW0x.jpg', 'HEAVY FLEECE • 3 COLORS')"
+                class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded min-h-[44px] min-w-[44px] flex items-center justify-center"
+                aria-label="Select size for Heavy Fleece Jacket"
+              >
+                + ADD
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Shoppable Instagram Reels (Custom Mobile Snap Carousel + Videos) -->
+  <section id="reels" aria-label="Shoppable Instagram Reels" class="py-12 sm:py-20 bg-white border-b border-[#e5e5e5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+            <span class="text-[11px] font-mono uppercase tracking-wider text-[#777777] font-bold">
+              REAL INSTAGRAM REELS // @ORDON.EG
+            </span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-brand-en font-black uppercase tracking-tight text-[#111111]">
+            REELS & FIT CHECKS IN MOTION
+          </h2>
+          <p class="text-xs sm:text-sm text-[#777777] mt-1">
+            Real on-body streetwear fits from our community (Swipe on mobile to explore clips)
+          </p>
+        </div>
+
+        <a
+          href="https://instagram.com/ordon.eg"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2 px-4 py-2 border border-[#111111] rounded text-xs font-bold font-brand-en uppercase hover:bg-[#111111] hover:text-white transition-colors w-fit min-h-[44px]"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>FOLLOW @ORDON.EG (19K)</span>
+        </a>
+      </div>
+
+      <!-- 4 Vertical Reel Cards (Mobile Snap-X Scroll + Desktop 4-Col Grid) -->
+      <div class="flex overflow-x-auto snap-x snap-mandatory gap-3 sm:gap-6 pb-4 sm:pb-0 scrollbar-none sm:grid sm:grid-cols-2 lg:grid-cols-4">
+        
+        <!-- Reel 1 -->
+        <div class="reel-card group snap-center min-w-[240px] sm:min-w-0" onclick="toggleReelPlay(this, event)">
+          <video
+            src="assets/reel-1-change-everything.mp4"
+            poster="assets/reel-1-change-everything.jpg"
+            playsinline
+            loop
+            muted
+            class="reel-video"
+          ></video>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+          
+          <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+            <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+              <span class="play-state-icon">▶</span> 48.2K
+            </span>
+            <button type="button" onclick="toggleMute(this, event)" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-xs" title="Mute / Unmute Audio" aria-label="Toggle reel audio">
+              <span class="sound-icon">🔇</span>
+            </button>
+          </div>
+
+          <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+              ▶
+            </div>
+          </div>
+
+          <div class="relative z-10 p-3 text-white space-y-2">
+            <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+              "ORDON changes everything… New Winter 26 Boxy Drop"
+            </div>
+            <div class="flex items-center gap-1.5 pt-1">
+              <button
+                type="button"
+                onclick="openQuickShop('ORDON SIGNATURE BOX FIT TEE', 550, 'assets/box-fit-tee-black_DfNDyP7DXOw.jpg', 'BOX FIT • 2 COLORS'); event.stopPropagation();"
+                class="flex-1 py-2 bg-white hover:bg-neutral-100 text-[#111111] text-[11px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow min-h-[44px]"
+              >
+                <span>SHOP • LE 550 EGP</span>
+              </button>
+              <a
+                href="https://www.instagram.com/reel/DfXku6_tbxU/"
+                target="_blank"
+                rel="noopener"
+                onclick="event.stopPropagation();"
+                class="w-10 h-10 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors min-w-[40px]"
+                title="View on Instagram"
+                aria-label="View on Instagram"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 2 -->
+        <div class="reel-card group snap-center min-w-[240px] sm:min-w-0" onclick="toggleReelPlay(this, event)">
+          <video
+            src="assets/reel-2-chilly-vibes.mp4"
+            poster="assets/reel-2-chilly-vibes.jpg"
+            playsinline
+            loop
+            muted
+            class="reel-video"
+          ></video>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+          
+          <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+            <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+              <span class="play-state-icon">▶</span> 34.1K
+            </span>
+            <button type="button" onclick="toggleMute(this, event)" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-xs" title="Mute / Unmute Audio" aria-label="Toggle reel audio">
+              <span class="sound-icon">🔇</span>
+            </button>
+          </div>
+
+          <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+              ▶
+            </div>
+          </div>
+
+          <div class="relative z-10 p-3 text-white space-y-2">
+            <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+              "Chilly vibes without limits… 420 GSM Heavyweight Fleece"
+            </div>
+            <div class="flex items-center gap-1.5 pt-1">
+              <button
+                type="button"
+                onclick="openQuickShop('CHILLY VIBES HEAVYWEIGHT HOODIE', 890, 'assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg', '420 GSM FLEECE • 3 COLORS'); event.stopPropagation();"
+                class="flex-1 py-2 bg-white hover:bg-neutral-100 text-[#111111] text-[11px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow min-h-[44px]"
+              >
+                <span>SHOP • LE 890 EGP</span>
+              </button>
+              <a
+                href="https://www.instagram.com/reel/DY2Xe7at7vC/"
+                target="_blank"
+                rel="noopener"
+                onclick="event.stopPropagation();"
+                class="w-10 h-10 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors min-w-[40px]"
+                title="View on Instagram"
+                aria-label="View on Instagram"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 3 -->
+        <div class="reel-card group snap-center min-w-[240px] sm:min-w-0" onclick="toggleReelPlay(this, event)">
+          <video
+            src="assets/reel-3-winter-fit.mp4"
+            poster="assets/reel-3-winter-fit.jpg"
+            playsinline
+            loop
+            muted
+            class="reel-video"
+          ></video>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+          
+          <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+            <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+              <span class="play-state-icon">▶</span> 29.7K
+            </span>
+            <button type="button" onclick="toggleMute(this, event)" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-xs" title="Mute / Unmute Audio" aria-label="Toggle reel audio">
+              <span class="sound-icon">🔇</span>
+            </button>
+          </div>
+
+          <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+              ▶
+            </div>
+          </div>
+
+          <div class="relative z-10 p-3 text-white space-y-2">
+            <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+              "Available now. Color: 1, Sizes M-2XL. Limited Winter Drop"
+            </div>
+            <div class="flex items-center gap-1.5 pt-1">
+              <button
+                type="button"
+                onclick="openQuickShop('VINTAGE DROP OVERSIZED CREWNECK', 780, 'assets/vintage-drop-crewneck_DfH_PWZDfzy.jpg', 'WASHED FINISH • 2 COLORS'); event.stopPropagation();"
+                class="flex-1 py-2 bg-white hover:bg-neutral-100 text-[#111111] text-[11px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow min-h-[44px]"
+              >
+                <span>SHOP • LE 780 EGP</span>
+              </button>
+              <a
+                href="https://www.instagram.com/reel/Dert_74tztY/"
+                target="_blank"
+                rel="noopener"
+                onclick="event.stopPropagation();"
+                class="w-10 h-10 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors min-w-[40px]"
+                title="View on Instagram"
+                aria-label="View on Instagram"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reel 4 -->
+        <div class="reel-card group snap-center min-w-[240px] sm:min-w-0" onclick="toggleReelPlay(this, event)">
+          <video
+            src="assets/reel-4-done-movement.mp4"
+            poster="assets/reel-4-done-movement.jpg"
+            playsinline
+            loop
+            muted
+            class="reel-video"
+          ></video>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/40 pointer-events-none"></div>
+          
+          <div class="relative z-10 p-3 flex items-center justify-between text-white text-[10px] font-mono">
+            <span class="bg-black/60 backdrop-blur px-2 py-0.5 rounded flex items-center gap-1 font-bold">
+              <span class="play-state-icon">▶</span> 22.4K
+            </span>
+            <button type="button" onclick="toggleMute(this, event)" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur flex items-center justify-center text-white hover:bg-black text-xs" title="Mute / Unmute Audio" aria-label="Toggle reel audio">
+              <span class="sound-icon">🔇</span>
+            </button>
+          </div>
+
+          <div class="center-play-badge absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-white text-lg shadow-lg">
+              ▶
+            </div>
+          </div>
+
+          <div class="relative z-10 p-3 text-white space-y-2">
+            <div class="text-[11px] leading-tight font-medium text-neutral-200 line-clamp-2">
+              "Done… Studio fit check with our signature boxy drape"
+            </div>
+            <div class="flex items-center gap-1.5 pt-1">
+              <button
+                type="button"
+                onclick="openQuickShop('WIDE-LEG BAGGY DENIM JEANS', 850, 'assets/baggy-fit-denim-jeans_Dew0RQLDUD6.jpg', 'BAGGY FIT • SIZES 30:38'); event.stopPropagation();"
+                class="flex-1 py-2 bg-white hover:bg-neutral-100 text-[#111111] text-[11px] font-bold uppercase rounded flex items-center justify-center gap-1 transition-colors shadow min-h-[44px]"
+              >
+                <span>SHOP • LE 850 EGP</span>
+              </button>
+              <a
+                href="https://www.instagram.com/reel/DdUyvGINRS_/"
+                target="_blank"
+                rel="noopener"
+                onclick="event.stopPropagation();"
+                class="w-10 h-10 bg-white/10 hover:bg-white/20 text-white rounded flex items-center justify-center text-xs transition-colors min-w-[40px]"
+                title="View on Instagram"
+                aria-label="View on Instagram"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Brand Editorial: IN MOTION (Real Lookbook Shot from @ordon.eg) -->
+  <section id="lookbook" aria-label="Brand Craft & Manifesto" class="py-12 sm:py-20 bg-white border-b border-[#e5e5e5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-5">
+        <div class="rounded-lg overflow-hidden border border-[#e5e5e5] bg-[#f7f7f7] aspect-[3/4]">
+          <img src="assets/signature-heavy-fleece_DcQ6bdhDW0x.jpg" alt="ORDON Streetwear Editorial Lookbook" class="w-full h-full object-cover" loading="lazy" width="1080" height="1440">
+        </div>
+      </div>
+      <div class="lg:col-span-7 flex flex-col items-start text-left">
+        <span class="text-[11px] font-mono uppercase tracking-wider text-[#777777] font-bold mb-2">
+          THE ORDON EDIT // IN MOTION
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-brand-en font-black uppercase text-[#111111] leading-tight">
+          CRAFTED FOR EGYPTIAN STREETS.
+        </h2>
+        <p class="mt-4 text-sm sm:text-base text-[#555555] leading-relaxed">
+          Every drop undergoes rigorous development: combed Egyptian long-staple cotton, colorfast dyeing that resists fading, and calculated boxy proportions tailored for everyday street wear.
+        </p>
+
+        <div class="mt-8 space-y-3 w-full max-w-xl">
+          <div class="p-3.5 rounded border border-[#e5e5e5] bg-[#fafafa] flex items-center justify-between">
+            <span class="text-xs font-bold text-[#111111]">100% Egyptian Long-Staple Cotton</span>
+            <span class="text-[11px] font-mono text-[#777777]">PURE FABRIC</span>
+          </div>
+          <div class="p-3.5 rounded border border-[#e5e5e5] bg-[#fafafa] flex items-center justify-between">
+            <span class="text-xs font-bold text-[#111111]">Pre-shrunk fabric with guaranteed colorfastness</span>
+            <span class="text-[11px] font-mono text-[#777777]">PRE-SHRUNK</span>
+          </div>
+          <div class="p-3.5 rounded border border-[#e5e5e5] bg-[#fafafa] flex items-center justify-between">
+            <span class="text-xs font-bold text-[#111111]">Inspect & try-on with courier before payment</span>
+            <span class="text-[11px] font-mono text-[#777777]">TRY ON FIRST</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ Accordion (Ozar Custom FAQ Style) -->
+  <section aria-label="Frequently Asked Questions" class="py-12 bg-[#fafafa] border-b border-[#e5e5e5]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8">
+        <span class="text-[11px] font-mono uppercase tracking-wider text-[#777777] font-bold block mb-1">
+          HELP & COMMON QUESTIONS
+        </span>
+        <h2 class="text-2xl font-brand-en font-black uppercase text-[#111111]">FREQUENTLY ASKED QUESTIONS</h2>
+      </div>
+
+      <div class="space-y-3">
+        <!-- FAQ 1 -->
+        <details class="group bg-white rounded border border-[#e5e5e5] p-4 text-left cursor-pointer">
+          <summary class="font-bold text-xs sm:text-sm text-[#111111] flex items-center justify-between list-none min-h-[44px]">
+            <span>Can I inspect and try on the pieces before paying the courier?</span>
+            <span class="text-lg transition-transform group-open:rotate-45 font-mono text-[#777777]">+</span>
+          </summary>
+          <div class="mt-3 text-xs text-[#555555] leading-relaxed border-t border-[#f0f0f0] pt-3">
+            Yes, we provide full inspection and try-on upon delivery. You can open your order and fit the pieces with the courier before paying.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-white rounded border border-[#e5e5e5] p-4 text-left cursor-pointer">
+          <summary class="font-bold text-xs sm:text-sm text-[#111111] flex items-center justify-between list-none min-h-[44px]">
+            <span>How long does nationwide delivery take?</span>
+            <span class="text-lg transition-transform group-open:rotate-45 font-mono text-[#777777]">+</span>
+          </summary>
+          <div class="mt-3 text-xs text-[#555555] leading-relaxed border-t border-[#f0f0f0] pt-3">
+            Shipping takes 24 to 48 business hours for Cairo, Giza, and Delta cities. Other governorates and Upper Egypt take 2 to 3 business days maximum.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-white rounded border border-[#e5e5e5] p-4 text-left cursor-pointer">
+          <summary class="font-bold text-xs sm:text-sm text-[#111111] flex items-center justify-between list-none min-h-[44px]">
+            <span>Where are ORDON's physical flagship stores located?</span>
+            <span class="text-lg transition-transform group-open:rotate-45 font-mono text-[#777777]">+</span>
+          </summary>
+          <div class="mt-3 text-xs text-[#555555] leading-relaxed border-t border-[#f0f0f0] pt-3">
+            Our stores are open daily from 12:00 PM to 12:00 AM at:
+            <ul class="list-disc list-inside mt-2 space-y-1 font-medium text-[#111111]">
+              <li>Tanta: Hassan St. with Al-Amin intersection</li>
+              <li>El-Mahalla El-Kubra: Shukri Al-Qawatli Street</li>
+              <li>Kafr El-Sheikh: Al-Nabawi Al-Muhandis Street</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Slide-Over Cart Drawer (CRO + Free Shipping Progress) -->
+  <div id="drawer-overlay" class="drawer-overlay" onclick="closeCart()"></div>
+  <aside id="drawer-sidebar" class="drawer-sidebar" aria-label="Shopping Bag">
+    
+    <!-- Drawer Header -->
+    <div class="p-4 border-b border-[#e5e5e5] flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <h3 class="font-brand-en font-black text-sm uppercase text-[#111111]">SHOPPING BAG</h3>
+        <span id="drawer-count-badge" class="px-2 py-0.5 rounded bg-neutral-100 text-[10px] font-mono font-bold text-[#777777]">0 ITEMS</span>
+      </div>
+      <button type="button" onclick="closeCart()" class="p-2 text-[#777777] hover:text-[#111111] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Close bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="p-3 bg-[#fafafa] border-b border-[#e5e5e5] text-xs">
+      <div class="flex items-center justify-between text-[11px] mb-1.5">
+        <span id="shipping-msg">Add <strong class="text-[#111111]">LE 2,000</strong> more for Free Nationwide Delivery</span>
+        <span class="font-mono text-[#777777]">FREE SHIP</span>
+      </div>
+      <div class="w-full bg-[#e5e5e5] h-1.5 rounded-full overflow-hidden">
+        <div id="shipping-progress" class="bg-[#111111] h-full transition-all duration-300" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- Drawer Items List -->
+    <div id="drawer-items" class="flex-grow overflow-y-auto p-4 space-y-3">
+      <!-- Empty State -->
+      <div class="h-64 flex flex-col items-center justify-center text-center p-6 text-[#777777]">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="mb-2 text-[#cccccc]">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <p class="text-xs font-bold text-[#111111]">Your shopping bag is empty.</p>
+        <p class="text-[11px] text-[#777777] mt-1">Explore pieces and select your preferred fit</p>
+      </div>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-4 bg-white border-t border-[#e5e5e5] space-y-3">
+      <div class="flex items-baseline justify-between text-[#111111]">
+        <span class="text-xs font-bold font-brand-en uppercase">SUBTOTAL:</span>
+        <span class="text-base font-mono font-black" id="drawer-total">LE 0.00 EGP</span>
+      </div>
+
+      <div class="space-y-2">
+        <button type="button" class="w-full py-3 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold font-brand-en uppercase tracking-wider rounded transition-colors min-h-[44px]" onclick="openCheckoutConfirm()">
+          PROCEED TO CHECKOUT (CASH ON DELIVERY)
+        </button>
+
+        <a
+          id="btn-whatsapp-order"
+          href="https://wa.me/201065052442"
+          target="_blank"
+          rel="noopener"
+          class="w-full py-3 px-3 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold rounded flex items-center justify-center gap-2 transition-colors min-h-[44px]"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          <span>Instant 1-Click Order via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 12. Quick-Shop Mobile Bottom Sheet (CRO + Native Phone Size Selector) -->
+  <div id="quick-shop-overlay" class="bottom-sheet-overlay" onclick="closeQuickShop()"></div>
+  <div id="quick-shop-sheet" class="bottom-sheet p-5 text-left">
+    <!-- Drag Handle -->
+    <div class="w-12 h-1 bg-neutral-300 rounded-full mx-auto mb-4 cursor-pointer" onclick="closeQuickShop()"></div>
+
+    <!-- Product Snapshot Header -->
+    <div class="flex items-start gap-3 pb-4 border-b border-[#e5e5e5]">
+      <img id="qs-image" src="assets/box-fit-tee-black_DfNDyP7DXOw.jpg" alt="Product Image" class="w-20 h-24 object-cover rounded bg-[#f7f7f7] border border-[#e5e5e5] flex-shrink-0">
+      <div class="flex-grow">
+        <span id="qs-spec" class="text-[10px] font-mono text-[#777777] uppercase block">BOX FIT • 100% COTTON</span>
+        <h4 id="qs-title" class="font-brand-en font-bold text-sm text-[#111111] uppercase mt-0.5 leading-tight">PRODUCT NAME</h4>
+        <div class="mt-2 flex items-baseline gap-2">
+          <span id="qs-price" class="font-mono font-black text-sm text-[#111111]">LE 550.00 EGP</span>
+          <span class="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold">IN STOCK</span>
+        </div>
+      </div>
+      <button type="button" onclick="closeQuickShop()" class="p-2 text-[#777777] hover:text-[#111111] min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Close">
+        ✕
+      </button>
+    </div>
+
+    <!-- Size Selector -->
+    <div class="py-4 border-b border-[#e5e5e5]">
+      <div class="flex items-center justify-between mb-2">
+        <label class="text-xs font-bold text-[#111111]">Select Size:</label>
+        <button type="button" onclick="openSizeModal()" class="text-[11px] font-bold text-[#777777] hover:text-[#111111] underline">Size Guide 📐</button>
+      </div>
+
+      <div class="grid grid-cols-4 gap-2 mb-2" id="qs-size-grid">
+        <button type="button" class="size-pill" onclick="selectQuickSize(this, 'M')">M</button>
+        <button type="button" class="size-pill is-selected" onclick="selectQuickSize(this, 'L')">L</button>
+        <button type="button" class="size-pill" onclick="selectQuickSize(this, 'XL')">XL</button>
+        <button type="button" class="size-pill" onclick="selectQuickSize(this, '2XL')">2XL</button>
+      </div>
+
+      <p id="qs-fit-hint" class="text-[11px] text-[#777777]">
+        Size <strong class="text-[#111111]">L</strong> is recommended for 70 to 85 kg for a relaxed boxy drape.
+      </p>
+    </div>
+
+    <!-- Quantity & CTA Buttons -->
+    <div class="pt-4 space-y-2.5">
+      <div class="flex items-center justify-between mb-1">
+        <span class="text-xs font-bold text-[#111111]">Quantity:</span>
+        <div class="flex items-center gap-3 border border-[#e5e5e5] rounded px-3 py-1 font-mono text-xs">
+          <button type="button" onclick="changeQsQty(-1)" class="text-[#777777] hover:text-[#111111] font-bold min-w-[28px] min-h-[28px]">-</button>
+          <span id="qs-qty" class="font-bold text-[#111111]">1</span>
+          <button type="button" onclick="changeQsQty(1)" class="text-[#777777] hover:text-[#111111] font-bold min-w-[28px] min-h-[28px]">+</button>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        onclick="confirmQuickShopAdd()"
+        class="w-full py-3.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold font-brand-en uppercase tracking-wider rounded transition-colors flex items-center justify-center gap-2 min-h-[48px]"
+      >
+        <span>+ ADD TO BAG NOW</span>
+      </button>
+
+      <a
+        id="qs-whatsapp-btn"
+        href="https://wa.me/201065052442"
+        target="_blank"
+        rel="noopener"
+        class="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded flex items-center justify-center gap-2 transition-colors min-h-[48px]"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+        <span>⚡ INSTANT ORDER THIS SIZE VIA WHATSAPP</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating Non-Intrusive Cart Added Notification Toast -->
+  <aside id="cart-toast" class="cart-toast" role="status" aria-label="Item added to bag notification" dir="ltr">
+    <div class="flex items-center gap-3">
+      <img id="cart-toast-img" src="assets/box-fit-tee-black_DfNDyP7DXOw.jpg" alt="Product Thumbnail" class="w-11 h-14 object-cover rounded bg-neutral-900 border border-neutral-700 flex-shrink-0">
+      <div class="flex-grow min-w-0 text-left">
+        <div class="flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span class="text-xs font-bold text-white">Added to bag successfully</span>
+        </div>
+        <p id="cart-toast-title" class="text-xs text-neutral-300 font-brand-en font-bold truncate mt-0.5">PRODUCT NAME</p>
+        <div class="text-[11px] text-neutral-400 font-mono mt-0.5">
+          Size: <span id="cart-toast-size" class="text-white font-bold">L</span> • Qty: <span id="cart-toast-qty" class="text-white font-bold">1</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5 flex-shrink-0">
+        <button
+          type="button"
+          onclick="openCart(); hideCartToast();"
+          class="px-3 py-2 bg-white hover:bg-neutral-200 text-[#111111] text-xs font-brand-en font-bold uppercase rounded transition-colors min-h-[44px] flex items-center justify-center"
+        >
+          VIEW BAG
+        </button>
+        <button
+          type="button"
+          onclick="hideCartToast()"
+          class="p-2 text-neutral-400 hover:text-white min-w-[44px] min-h-[44px] flex items-center justify-center rounded hover:bg-neutral-800 transition-colors"
+          aria-label="Dismiss notification"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 13. Branches Modal (Verified Official Bio Addresses) -->
+  <div id="branches-modal" class="modal-backdrop" onclick="if(event.target===this)closeBranchesModal()">
+    <div class="bg-white border border-[#e5e5e5] rounded-lg max-w-lg w-full p-5 shadow-2xl relative text-left">
+      <button type="button" onclick="closeBranchesModal()" class="absolute top-4 left-4 text-[#777777] hover:text-[#111111] p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="mb-4">
+        <span class="text-[10px] font-mono uppercase text-[#777777] font-bold">DELTA BRANCHES // @ORDON.EG</span>
+        <h3 class="text-lg font-brand-en font-black uppercase text-[#111111]">OFFICIAL ORDON FLAGSHIP STORES</h3>
+        <p class="text-xs text-[#555555] mt-1">Visit us in-store to inspect fabrics, try on sizes, and pick up orders directly:</p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- Tanta -->
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded flex items-center justify-between">
+          <div>
+            <h4 class="font-bold text-xs text-[#111111]">Tanta Flagship</h4>
+            <p class="text-[11px] text-[#777777]">Hassan St. with Al-Amin Intersection</p>
+          </div>
+          <a href="https://maps.google.com/?q=Tanta+Hassan+Street" target="_blank" rel="noopener" class="px-3 py-1.5 bg-white border border-[#111111] text-[11px] font-bold rounded hover:bg-[#111111] hover:text-white transition-colors min-h-[44px] flex items-center">
+            Get Directions &rarr;
+          </a>
+        </div>
+
+        <!-- El-Mahallah -->
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded flex items-center justify-between">
+          <div>
+            <h4 class="font-bold text-xs text-[#111111]">El-Mahalla El-Kubra Flagship</h4>
+            <p class="text-[11px] text-[#777777]">Shukri Al-Qawatli Street</p>
+          </div>
+          <a href="https://maps.google.com/?q=El+Mahalla+El+Kubra+Shukri+Al-Qawatli" target="_blank" rel="noopener" class="px-3 py-1.5 bg-white border border-[#111111] text-[11px] font-bold rounded hover:bg-[#111111] hover:text-white transition-colors min-h-[44px] flex items-center">
+            Get Directions &rarr;
+          </a>
+        </div>
+
+        <!-- Kafr El-Sheikh -->
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded flex items-center justify-between">
+          <div>
+            <h4 class="font-bold text-xs text-[#111111]">Kafr El-Sheikh Flagship</h4>
+            <p class="text-[11px] text-[#777777]">Al-Nabawi Al-Muhandis Street</p>
+          </div>
+          <a href="https://maps.google.com/?q=Kafr+El+Sheikh+Al-Nabawi+Street" target="_blank" rel="noopener" class="px-3 py-1.5 bg-white border border-[#111111] text-[11px] font-bold rounded hover:bg-[#111111] hover:text-white transition-colors min-h-[44px] flex items-center">
+            Get Directions &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 14. Size Guide Modal (CRO Fit Table) -->
+  <div id="size-modal" class="modal-backdrop" onclick="if(event.target===this)closeSizeModal()">
+    <div class="bg-white border border-[#e5e5e5] rounded-lg max-w-md w-full p-5 shadow-2xl relative text-left">
+      <button type="button" onclick="closeSizeModal()" class="absolute top-4 left-4 text-[#777777] hover:text-[#111111] p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="mb-4">
+        <span class="text-[10px] font-mono uppercase text-[#777777] font-bold">FIT GUIDE</span>
+        <h3 class="text-lg font-brand-en font-black uppercase text-[#111111]">Official Size Guide</h3>
+        <p class="text-xs text-[#555555] mt-1">All ORDON pieces are engineered with an intentional boxy drop-shoulder cut. Choose your true size for a relaxed drape, or size up for an oversized streetwear look.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs text-[#111111] border-collapse font-mono">
+          <thead>
+            <tr class="border-b border-[#e5e5e5] text-[#777777] font-bold text-left">
+              <th class="py-2.5">Size</th>
+              <th class="py-2.5">Chest</th>
+              <th class="py-2.5">Length</th>
+              <th class="py-2.5">Recommended Weight</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#e5e5e5]">
+            <tr>
+              <td class="py-2.5 font-bold">Medium (M)</td>
+              <td class="py-2.5">118 cm</td>
+              <td class="py-2.5">72 cm</td>
+              <td class="py-2.5 text-[#777777]">55 - 70 kg</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 font-bold">Large (L)</td>
+              <td class="py-2.5">124 cm</td>
+              <td class="py-2.5">75 cm</td>
+              <td class="py-2.5 text-[#777777]">70 - 85 kg</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 font-bold">X-Large (XL)</td>
+              <td class="py-2.5">130 cm</td>
+              <td class="py-2.5">78 cm</td>
+              <td class="py-2.5 text-[#777777]">85 - 100 kg</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 font-bold">2X-Large (2XL)</td>
+              <td class="py-2.5">136 cm</td>
+              <td class="py-2.5">81 cm</td>
+              <td class="py-2.5 text-[#777777]">100 - 118 kg</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 15. GRC Consumer Rights Modal (Egyptian Consumer Protection Law 181/2018) -->
+  <div id="grc-modal" class="modal-backdrop" onclick="if(event.target===this)closeGrcModal()">
+    <div class="bg-white border border-[#e5e5e5] rounded-lg max-w-lg w-full p-5 shadow-2xl relative text-left">
+      <button type="button" onclick="closeGrcModal()" class="absolute top-4 left-4 text-[#777777] hover:text-[#111111] p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="mb-4">
+        <span class="text-[10px] font-mono uppercase text-[#777777] font-bold">GOVERNANCE & CONSUMER RIGHTS</span>
+        <h3 class="text-lg font-brand-en font-black uppercase text-[#111111]">CONSUMER RIGHTS & STORE POLICY</h3>
+        <p class="text-xs text-[#555555] mt-1">ORDON strictly complies with Egyptian Consumer Protection Law No. 181/2018 and its executive regulations to ensure complete trust and transparency:</p>
+      </div>
+
+      <div class="space-y-3 text-xs leading-relaxed text-[#444444]">
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded">
+          <h4 class="font-bold text-[#111111] mb-1">Try-On & Inspection on Delivery:</h4>
+          <p>You have the legal right to inspect and try on your items in the presence of the courier to verify size, fabric, and style before paying.</p>
+        </div>
+
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded">
+          <h4 class="font-bold text-[#111111] mb-1">Exchange & Return Window:</h4>
+          <p>You can return or exchange any unworn product with original tags attached within 14 days of delivery for a full refund or direct exchange.</p>
+        </div>
+
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded">
+          <h4 class="font-bold text-[#111111] mb-1">Manufacturing Defect Warranty:</h4>
+          <p>In case of any manufacturing flaw in fabric, stitching, or dyeing, the item will be replaced immediately free of charge or refunded in full.</p>
+        </div>
+
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded text-[11px] font-mono">
+          <span class="font-bold text-[#111111] block mb-0.5">Official Customer Support & Inquiries:</span>
+          <span>Official Support & WhatsApp: +20 106 505 2442 • Email: contact@ordoneg.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 16. Privacy & Cookie Consent Toast (GRC - Law 151/2020) -->
+  <div id="privacy-toast" class="privacy-toast">
+    <div class="flex items-center gap-2">
+      <span class="text-base">🔒</span>
+      <p class="leading-tight">
+        We use essential cookies to maintain your shopping bag and ensure secure browsing in accordance with Egyptian Data Protection Law.
+      </p>
+    </div>
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <button type="button" onclick="acceptPrivacy()" class="px-3 py-1.5 bg-white text-[#111111] font-bold text-xs rounded hover:bg-neutral-200 transition-colors min-h-[36px]">
+        GOT IT
+      </button>
+      <button type="button" onclick="openGrcModal()" class="text-neutral-400 hover:text-white underline text-[10px]">
+        Details
+      </button>
+    </div>
+  </div>
+
+  <!-- 17. Mobile Bottom Dock (Thumb-friendly Navigation & Native App Feel) -->
+  <nav aria-label="Mobile Bottom Navigation Dock" class="mobile-dock">
+    <a href="#" class="dock-btn is-active">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Home</span>
+    </a>
+
+    <a href="#featured" class="dock-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      <span>The Drop</span>
+    </a>
+
+    <button type="button" class="dock-btn relative" onclick="openCart()" aria-label="Open Shopping Bag">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      <span>Bag</span>
+      <span id="dock-cart-badge" class="absolute top-1 left-2 w-4 h-4 rounded-full bg-[#111111] text-white text-[9px] font-mono font-bold flex items-center justify-center">0</span>
+    </button>
+
+    <button type="button" class="dock-btn" onclick="openBranchesModal()" aria-label="View Flagship Stores">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span>Stores</span>
+    </button>
+
+    <a href="https://wa.me/201065052442" target="_blank" rel="noopener" class="dock-btn text-emerald-600" aria-label="Contact via WhatsApp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- 18. Minimalist Footer (Strictly English dir="ltr" per Global Rules) -->
+  <footer class="bg-white border-t border-[#e5e5e5] py-12 text-[#111111]" dir="ltr">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#e5e5e5]">
+        <div class="flex items-center gap-3">
+          <img src="assets/ordon-official-logo.jpg" alt="ORDON Monogram" class="w-8 h-8 rounded-full object-cover">
+          <div>
+            <span class="font-brand-en font-black text-lg tracking-widest text-[#111111]">ORDON<span class="text-xs text-[#777777]">.EGY</span></span>
+            <p class="text-xs text-[#777777]">Born To Be Iconic — Streetwear Egypt</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 text-xs font-brand-en font-bold uppercase tracking-wider text-[#777777]">
+          <a href="https://instagram.com/ordon.eg" target="_blank" rel="noopener" class="hover:text-[#111111]">Instagram</a>
+          <a href="https://wa.me/201065052442" target="_blank" rel="noopener" class="hover:text-[#111111]">WhatsApp</a>
+          <a href="https://facebook.com/profile.php?id=61587011244914" target="_blank" rel="noopener" class="hover:text-[#111111]">Facebook</a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-[#777777] gap-3">
+        <div>&copy; 2026 ORDON EGYPT. Developed &amp; Designed by <a href="https://github.com/seifwalidfathe-bot" target="_blank" rel="noopener" class="font-bold text-[#111111] hover:underline">Seif Walid</a>. All rights reserved. Registered under Egyptian Consumer Protection Law 181/2018.</div>
+        <div class="flex items-center gap-4 text-[11px]">
+          <button type="button" onclick="openGrcModal()" class="hover:underline">Consumer Rights & Returns</button>
+          <span>•</span>
+          <a href="#" class="hover:underline">Shipping Policy (Egypt)</a>
+          <span>•</span>
+          <button type="button" onclick="openGrcModal()" class="hover:underline">Privacy & Terms</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 19. Interactive Storefront Client Script -->
+  <script>
+    const FREE_SHIPPING_LIMIT = 2000;
+    let cart = [];
+    let currentQuickItem = null;
+    let selectedSize = 'L';
+    let selectedQty = 1;
+
+    // Mobile Navigation Drawer Controls
+    function openMobileNav() {
+      document.getElementById('mobile-nav-sidebar').classList.add('is-active');
+      document.getElementById('mobile-nav-overlay').classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileNav() {
+      document.getElementById('mobile-nav-sidebar').classList.remove('is-active');
+      document.getElementById('mobile-nav-overlay').classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+
+    // Cart Drawer Controls
+    function openCart() {
+      document.getElementById('drawer-sidebar').classList.add('is-active');
+      document.getElementById('drawer-overlay').classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCart() {
+      document.getElementById('drawer-sidebar').classList.remove('is-active');
+      document.getElementById('drawer-overlay').classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+
+    // Branches Modal
+    function openBranchesModal() {
+      document.getElementById('branches-modal').classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBranchesModal() {
+      document.getElementById('branches-modal').classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+
+    // Size Guide Modal
+    function openSizeModal() {
+      document.getElementById('size-modal').classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSizeModal() {
+      document.getElementById('size-modal').classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+
+    // GRC Consumer Rights Modal
+    function openGrcModal() {
+      document.getElementById('grc-modal').classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeGrcModal() {
+      document.getElementById('grc-modal').classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+
+    // Privacy Consent Toast
+    function acceptPrivacy() {
+      const toast = document.getElementById('privacy-toast');
+      if (toast) {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(20px)';
+        setTimeout(() => toast.remove(), 300);
+      }
+      localStorage.setItem('ordon_privacy_accepted', '1');
+    }
+
+    if (localStorage.getItem('ordon_privacy_accepted') === '1') {
+      const toast = document.getElementById('privacy-toast');
+      if (toast) toast.remove();
+    }
+
+    // Mobile Search Bar Toggle
+    function toggleSearchInput() {
+      const bar = document.getElementById('mobile-search-bar');
+      if (bar.classList.contains('hidden')) {
+        bar.classList.remove('hidden');
+        document.getElementById('product-search-input').focus();
+      } else {
+        bar.classList.add('hidden');
+      }
+    }
+
+    function handleSearch(term) {
+      term = term.trim().toLowerCase();
+      const articles = document.querySelectorAll('.product-card');
+      articles.forEach(art => {
+        const title = (art.dataset.title || '').toLowerCase();
+        const cat = (art.dataset.category || '').toLowerCase();
+        if (!term || title.includes(term) || cat.includes(term)) {
+          art.style.display = 'flex';
+        } else {
+          art.style.display = 'none';
+        }
+      });
+    }
+
+    // Quick-Shop Mobile Bottom Sheet
+    function openQuickShop(title, price, image, spec) {
+      currentQuickItem = { title, price, image, spec };
+      selectedSize = 'L';
+      selectedQty = 1;
+
+      document.getElementById('qs-title').innerText = title;
+      document.getElementById('qs-price').innerText = `LE ${price.toLocaleString()}.00 EGP`;
+      document.getElementById('qs-image').src = image;
+      document.getElementById('qs-spec').innerText = spec || '100% COTTON • STREETWEAR FIT';
+      document.getElementById('qs-qty').innerText = selectedQty;
+
+      // Reset sizes
+      document.querySelectorAll('#qs-size-grid .size-pill').forEach(btn => {
+        if (btn.innerText.trim() === 'L') {
+          btn.classList.add('is-selected');
+        } else {
+          btn.classList.remove('is-selected');
+        }
+      });
+
+      updateFitHint('L');
+      updateQuickShopWhatsAppLink();
+
+      document.getElementById('quick-shop-overlay').classList.add('is-active');
+      document.getElementById('quick-shop-sheet').classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeQuickShop() {
+      document.getElementById('quick-shop-overlay').classList.remove('is-active');
+      document.getElementById('quick-shop-sheet').classList.remove('is-active');
+      document.body.style.overflow = '';
+      currentQuickItem = null;
+    }
+
+    function selectQuickSize(btn, size) {
+      document.querySelectorAll('#qs-size-grid .size-pill').forEach(b => b.classList.remove('is-selected'));
+      btn.classList.add('is-selected');
+      selectedSize = size;
+      updateFitHint(size);
+      updateQuickShopWhatsAppLink();
+    }
+
+    function updateFitHint(size) {
+      const hint = document.getElementById('qs-fit-hint');
+      const hints = {
+        'M': 'Size M is recommended for 55 to 70 kg (Length: 72 cm).',
+        'L': 'Size L is recommended for 70 to 85 kg (Length: 75 cm) — Most Popular.',
+        'XL': 'Size XL is recommended for 85 to 100 kg (Length: 78 cm).',
+        '2XL': 'Size 2XL is recommended for 100 to 118 kg (Length: 81 cm).'
+      };
+      hint.innerHTML = hints[size] || '';
+    }
+
+    function changeQsQty(delta) {
+      selectedQty = Math.max(1, selectedQty + delta);
+      document.getElementById('qs-qty').innerText = selectedQty;
+      updateQuickShopWhatsAppLink();
+    }
+
+    function updateQuickShopWhatsAppLink() {
+      if (!currentQuickItem) return;
+      const btn = document.getElementById('qs-whatsapp-btn');
+      const total = currentQuickItem.price * selectedQty;
+      const text = `Hello ORDON team, I would like to order:%0A• ${currentQuickItem.title} - Size: ${selectedSize} - Qty: ${selectedQty}%0ATotal: LE ${total} EGP%0APayment: Cash on Delivery (with Inspection)%0AAddress:`;
+      btn.href = `https://wa.me/201065052442?text=${text}`;
+    }
+
+    function confirmQuickShopAdd() {
+      if (!currentQuickItem) return;
+      addToCart(currentQuickItem.title, currentQuickItem.price, selectedSize, currentQuickItem.image, selectedQty);
+      closeQuickShop();
+    }
+
+    // Video Reel Play / Pause & Audio Controls
+    function toggleReelPlay(card, event) {
+      if (event.target.closest('button') || event.target.closest('a')) return;
+      const video = card.querySelector('video');
+      const playBadge = card.querySelector('.center-play-badge');
+      const playStateIcon = card.querySelector('.play-state-icon');
+
+      document.querySelectorAll('.reel-video').forEach(v => {
+        if (v !== video) {
+          v.pause();
+          const parent = v.closest('.reel-card');
+          if (parent) {
+            const badge = parent.querySelector('.center-play-badge');
+            if (badge) badge.style.opacity = '1';
+            const stateIcon = parent.querySelector('.play-state-icon');
+            if (stateIcon) stateIcon.innerText = '▶';
+          }
+        }
+      });
+
+      if (video.paused) {
+        video.play();
+        if (playBadge) playBadge.style.opacity = '0';
+        if (playStateIcon) playStateIcon.innerText = '⏸';
+      } else {
+        video.pause();
+        if (playBadge) playBadge.style.opacity = '1';
+        if (playStateIcon) playStateIcon.innerText = '▶';
+      }
+    }
+
+    function toggleMute(btn, event) {
+      event.stopPropagation();
+      const card = btn.closest('.reel-card');
+      const video = card.querySelector('video');
+      const soundIcon = btn.querySelector('.sound-icon');
+      if (video.muted) {
+        video.muted = false;
+        soundIcon.innerText = '🔊';
+      } else {
+        video.muted = true;
+        soundIcon.innerText = '🔇';
+      }
+    }
+
+    // Cart Toast Notification (Replaces intrusive auto-drawer popup)
+    let cartToastTimer = null;
+    function showCartToast(item) {
+      const toast = document.getElementById('cart-toast');
+      const img = document.getElementById('cart-toast-img');
+      const title = document.getElementById('cart-toast-title');
+      const size = document.getElementById('cart-toast-size');
+      const qty = document.getElementById('cart-toast-qty');
+
+      if (!toast) return;
+
+      if (img && item.image) img.src = item.image;
+      if (title) title.innerText = item.title;
+      if (size) size.innerText = item.size || 'L';
+      if (qty) qty.innerText = item.qty || 1;
+
+      toast.classList.add('is-active');
+
+      if (cartToastTimer) clearTimeout(cartToastTimer);
+      cartToastTimer = setTimeout(() => {
+        hideCartToast();
+      }, 3500);
+    }
+
+    function hideCartToast() {
+      const toast = document.getElementById('cart-toast');
+      if (toast) toast.classList.remove('is-active');
+      if (cartToastTimer) {
+        clearTimeout(cartToastTimer);
+        cartToastTimer = null;
+      }
+    }
+
+    // Cart Management
+    function addToCart(title, price, size, image, qty = 1) {
+      const existing = cart.find(i => i.title === title && i.size === size);
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        cart.push({ title, price, size, image, qty });
+      }
+      renderCart();
+      // Never open cart drawer automatically; show sleek feedback toast instead
+      showCartToast({ title, price, size, image, qty });
+    }
+
+    function updateQty(idx, change) {
+      if (!cart[idx]) return;
+      cart[idx].qty += change;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      renderCart();
+    }
+
+    function renderCart() {
+      const drawerItems = document.getElementById('drawer-items');
+      const headerCartBadge = document.getElementById('header-cart-badge');
+      const dockCartBadge = document.getElementById('dock-cart-badge');
+      const drawerCountBadge = document.getElementById('drawer-count-badge');
+      const drawerTotal = document.getElementById('drawer-total');
+      const shippingProgress = document.getElementById('shipping-progress');
+      const shippingMsg = document.getElementById('shipping-msg');
+      const waBtn = document.getElementById('btn-whatsapp-order');
+
+      const count = cart.reduce((sum, item) => sum + item.qty, 0);
+      const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+      headerCartBadge.innerText = count;
+      headerCartBadge.classList.remove('animate-badge-pop');
+      void headerCartBadge.offsetWidth;
+      headerCartBadge.classList.add('animate-badge-pop');
+
+      if (dockCartBadge) {
+        dockCartBadge.innerText = count;
+        dockCartBadge.classList.remove('animate-badge-pop');
+        void dockCartBadge.offsetWidth;
+        dockCartBadge.classList.add('animate-badge-pop');
+      }
+
+      drawerCountBadge.innerText = `${count} ITEMS`;
+      drawerTotal.innerText = `LE ${total.toLocaleString()}.00 EGP`;
+
+      const progress = Math.min(100, Math.round((total / FREE_SHIPPING_LIMIT) * 100));
+      shippingProgress.style.width = `${progress}%`;
+
+      if (total >= FREE_SHIPPING_LIMIT) {
+        shippingMsg.innerHTML = '<span class="text-emerald-700 font-bold">Unlocked: Free Nationwide Shipping across Egypt!</span>';
+      } else {
+        const remaining = FREE_SHIPPING_LIMIT - total;
+        shippingMsg.innerHTML = `Add <strong class="text-[#111111]">LE ${remaining.toLocaleString()}</strong> more for Free Nationwide Delivery`;
+      }
+
+      if (cart.length > 0) {
+        const itemsText = cart.map(i => `• ${i.title} (${i.size}) x ${i.qty} = ${i.price * i.qty} EGP`).join('%0A');
+        waBtn.href = `https://wa.me/201065052442?text=Hello%20ORDON%20team,%20I%20would%20like%20to%20order:%0A${itemsText}%0A%0ATotal:%20LE%20${total}%20EGP%0APayment:%20Cash%20on%20Delivery%20(with%20Inspection)%0AAddress:`;
+      } else {
+        waBtn.href = "https://wa.me/201065052442?text=Hello%20ORDON%20team,%20I%20would%20like%20to%20inquire%20about%20the%20Winter%20Collection";
+      }
+
+      if (cart.length === 0) {
+        drawerItems.innerHTML = `
+          <div class="h-64 flex flex-col items-center justify-center text-center p-6 text-[#777777]">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="mb-2 text-[#cccccc]">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <p class="text-xs font-bold text-[#111111]">Your shopping bag is empty.</p>
+            <p class="text-[11px] text-[#777777] mt-1">Explore pieces and select your preferred fit</p>
+          </div>
+        `;
+        return;
+      }
+
+      drawerItems.innerHTML = cart.map((item, idx) => `
+        <div class="p-3 bg-[#fafafa] border border-[#e5e5e5] rounded flex gap-3 text-left">
+          <img src="${item.image}" alt="${item.title}" class="w-16 h-20 object-cover rounded bg-white border border-[#e5e5e5]">
+          <div class="flex-grow flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between">
+                <h4 class="font-brand-en font-bold text-xs text-[#111111] uppercase line-clamp-1">${item.title}</h4>
+                <button type="button" onclick="updateQty(${idx}, -${item.qty})" class="text-[#999999] hover:text-rose-600 text-xs min-w-[32px] min-h-[32px] flex items-center justify-center" aria-label="Remove item">✕</button>
+              </div>
+              <div class="text-[11px] text-[#777777] font-mono mt-0.5">Size: ${item.size}</div>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-[#f0f0f0]">
+              <span class="font-mono font-bold text-xs text-[#111111]">LE ${(item.price * item.qty).toLocaleString()}.00</span>
+              <div class="flex items-center gap-2 border border-[#e5e5e5] bg-white rounded px-2 py-0.5 text-xs font-mono">
+                <button type="button" onclick="updateQty(${idx}, -1)" class="text-[#777777] hover:text-[#111111] px-1 font-bold min-w-[28px] min-h-[28px] flex items-center justify-center" aria-label="Decrease quantity">-</button>
+                <span class="font-bold text-[#111111]">${item.qty}</span>
+                <button type="button" onclick="updateQty(${idx}, 1)" class="text-[#777777] hover:text-[#111111] px-1 font-bold min-w-[28px] min-h-[28px] flex items-center justify-center" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openCheckoutConfirm() {
+      if (cart.length === 0) {
+        alert('Your shopping bag is empty.!');
+        return;
+      }
+      const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+      const itemsText = cart.map(i => `• ${i.title} (${i.size}) x ${i.qty}`).join('\n');
+      const confirmOrder = confirm(`Confirm Cash on Delivery Order (with Try-On Inspection):\n\n${itemsText}\n\nTotal: LE ${total.toLocaleString()} EGP\n\nClick OK to confirm your order via WhatsApp Support!`);
+      if (confirmOrder) {
+        document.getElementById('btn-whatsapp-order').click();
+      }
+    }
+
+    function filterCategory(cat) {
+      document.querySelectorAll('.cat-btn').forEach(b => {
+        if (b.dataset.cat === cat) {
+          b.classList.add('is-active');
+        } else {
+          b.classList.remove('is-active');
+        }
+      });
+
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (cat === 'all' || card.dataset.category === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>

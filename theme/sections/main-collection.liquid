@@ -1,0 +1,36 @@
+{%- comment -%}
+  ORDON EGYPT — Main Collection Section
+{%- endcomment -%}
+
+<section class="py-12 bg-[#08090d] min-h-screen text-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-10 text-center max-w-2xl mx-auto">
+      <div class="ice-badge mb-2">
+        <span class="pulse-dot"></span> ORDON ARCHIVE
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-display font-black text-white uppercase tracking-tight">
+        {{ collection.title | default: 'جميع القطع (All Streetwear Drops)' }}
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-400 mt-2">
+        {{ collection.description | default: 'تسوق قطع الشتا الثقيلة والأوفرسايز المصنوعة من القطن المصري الفاخر.' }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {%- for product in collection.products -%}
+        {% render 'product-card', product: product %}
+      {%- else -%}
+        <div class="col-span-full text-center py-20 text-slate-500 font-mono text-sm">
+          لا توجد منتجات متوفرة في هذه المجموعة حالياً.
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main Collection",
+  "settings": []
+}
+{% endschema %}

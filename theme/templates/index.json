@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "story_highlights": {
+      "type": "story-highlights",
+      "settings": {}
+    },
+    "hero": {
+      "type": "hero-chilly",
+      "settings": {}
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "products_to_show": 8
+      }
+    },
+    "reels": {
+      "type": "shoppable-reels",
+      "settings": {}
+    },
+    "chilly_feature": {
+      "type": "chilly-vibes-drop",
+      "settings": {}
+    },
+    "branches": {
+      "type": "branches-locator",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "featured",
+    "reels",
+    "chilly_feature",
+    "branches"
+  ]
+}

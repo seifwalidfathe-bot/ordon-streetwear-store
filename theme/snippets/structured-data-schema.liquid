@@ -1,0 +1,127 @@
+{%- comment -%}
+  JSON-LD Structured Data Schema for ORDON EGYPT (ClothingStore, Local Branches, WebSite & FAQPage)
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ClothingStore",
+      "@id": "{{ shop.url }}/#store",
+      "name": "ORDON EGYPT",
+      "alternateName": "ORDON Streetwear",
+      "url": "{{ shop.url }}",
+      "logo": "{{ 'ordon-logo-black.png' | asset_url | prepend: 'https:' }}",
+      "image": "{{ 'chilly-hoodie-heavy_Dezuk1XjUtZ.jpg' | asset_url | prepend: 'https:' }}",
+      "description": "المتجر الرسمي لعلامة ORDON EGYPT للملابس والستريت وير المصري المصنوع من القطن الطبيعي 100%.",
+      "telephone": "+201065052442",
+      "priceRange": "$$",
+      "currenciesAccepted": "EGP",
+      "paymentAccepted": "Cash on Delivery, Cash",
+      "openingHours": "Mo-Su 12:00-24:00",
+      "sameAs": [
+        "https://www.instagram.com/ordon.eg/",
+        "https://www.facebook.com/profile.php?id=61587011244914",
+        "https://linktr.ee/ordon.egypt"
+      ],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Hassan St. with Al-Amin intersection",
+          "addressLocality": "Tanta",
+          "addressRegion": "Gharbia",
+          "addressCountry": "EG"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Shukri Al-Qawatli Street",
+          "addressLocality": "El Mahalla El Kubra",
+          "addressRegion": "Gharbia",
+          "addressCountry": "EG"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Al-Nabawi Al-Muhandis Street",
+          "addressLocality": "Kafr El Sheikh",
+          "addressRegion": "Kafr El Sheikh",
+          "addressCountry": "EG"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ shop.url }}/#website",
+      "url": "{{ shop.url }}",
+      "name": "ORDON EGYPT",
+      "inLanguage": "{{ request.locale.iso_code }}",
+      "publisher": {
+        "@id": "{{ shop.url }}/#store"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل متاح معاينة وقياس الملابس مع المندوب قبل الدفع؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، نوفر ميزة المعاينة والقياس عند الاستلام قبل دفع ثمن الطلب وفقاً لقانون حماية المستهلك المصري."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كم تستغرق مدة التوصيل لكافة محافظات مصر؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "تستغرق مدة الشحن من 24 إلى 48 ساعة لمحافظات القاهرة والجيزة والدلتا، و2 إلى 3 أيام لباقي المحافظات والصعيد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما هي سياسة الاستبدال والاسترجاع المعتمدة لدى ORDON؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يحق للعميل استبدال أو استرجاع The Drop غير المستخدمة خلال 14 يوماً من تاريخ الاستلام، مع ضمان استبدال فوري مجاني ضد أي عيوب صناعة لمدة 30 يوماً."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+{%- if template.name == 'product' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": "{{ shop.url }}{{ product.url }}",
+  {%- if product.featured_media -%}
+    "image": [
+      {{ product.featured_media | image_url: width: 1200 | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  "sku": {{ product.selected_or_first_available_variant.sku | default: product.id | json }},
+  "brand": {
+    "@type": "Brand",
+    "name": "ORDON"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": {{ shop.currency | json }},
+    "price": {{ product.selected_or_first_available_variant.price | divided_by: 100.0 | json }},
+    "availability": "https://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "url": "{{ shop.url }}{{ product.url }}"
+  }
+}
+</script>
+{%- endif -%}

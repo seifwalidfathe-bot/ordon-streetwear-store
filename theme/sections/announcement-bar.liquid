@@ -1,0 +1,30 @@
+{%- comment -%}
+  ORDON EGYPT — Minimal Announcement Bar (Ozar Style)
+{%- endcomment -%}
+
+<div class="bg-[#111111] text-[#ffffff] text-[11px] font-mono py-2 px-4 text-center tracking-wider uppercase flex items-center justify-center gap-3">
+  <span>{{ section.settings.text | default: 'Free Shipping لكافة محافظات مصر عند الطلب بأكثر من 2,000 ج.م' }}</span>
+  <span class="hidden sm:inline text-neutral-400">•</span>
+  <span class="hidden sm:inline">معاينة وقياس قبل الاستلام</span>
+</div>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "tag": "section",
+  "class": "section-announcement-bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Announcement Text",
+      "default": "Free Shipping لكافة محافظات مصر عند الطلب بأكثر من 2,000 ج.م"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
+}
+{% endschema %}

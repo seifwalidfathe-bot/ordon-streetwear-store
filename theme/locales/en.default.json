@@ -1,0 +1,25 @@
+{
+  "general": {
+    "cart": {
+      "title": "Your Bag",
+      "empty": "Your cart is chilly & empty. Grab some heat!",
+      "checkout": "Proceed to Checkout",
+      "free_shipping_away": "Add {{ amount }} more to unlock FREE Shipping across Egypt!",
+      "free_shipping_unlocked": "Free Delivery across Egypt unlocked!"
+    },
+    "branches": {
+      "title": "Our Stores",
+      "subtitle": "Try before you buy at our flagship branches across the Delta"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to Cart",
+      "sold_out": "Sold Out",
+      "unavailable": "Unavailable",
+      "quick_view": "Quick View",
+      "size_guide": "Size Guide",
+      "chilly_feature": "Heavyweight French Terry & Brushed Fleece"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{%- comment -%}
+  ORDON EGYPT — Product Card Snippet (Ozar Minimal Style + CRO Size Bottom Sheet)
+{%- endcomment -%}
+
+<article class="product-card group" data-product-id="{{ product.id }}">
+  <div class="product-image-box">
+    <a href="{{ product.url }}" class="block w-full h-full">
+      {%- if product.featured_media -%}
+        <img
+          src="{{ product.featured_media | image_url: width: 600 }}"
+          alt="{{ product.title | escape }}"
+          loading="lazy"
+          width="600"
+          height="750"
+        >
+      {%- else -%}
+        <div class="w-full h-full flex items-center justify-center bg-[#f7f7f7] text-[#777777] font-mono text-xs">
+          ORDON PRODUCT
+        </div>
+      {%- endif -%}
+    </a>
+
+    <!-- Badge -->
+    <div class="absolute top-2 right-2 z-10">
+      {%- if product.compare_at_price > product.price -%}
+        <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">
+          خصم {{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%
+        </span>
+      {%- else -%}
+        <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">NEW IN</span>
+      {%- endif -%}
+    </div>
+  </div>
+
+  <div class="p-3.5 flex flex-col justify-between flex-grow gap-2 text-right">
+    <div>
+      <div class="text-[10px] text-[#777777] font-mono uppercase">
+        {{ product.type | default: 'STREETWEAR' }} • 100% COTTON
+      </div>
+      <h3 class="font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
+        <a href="{{ product.url }}">{{ product.title }}</a>
+      </h3>
+    </div>
+
+    <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
+      <div>
+        <span class="font-mono font-black text-xs sm:text-sm text-[#111111]">{{ product.price | money_with_currency }}</span>
+        {%- if product.compare_at_price > product.price -%}
+          <span class="font-mono text-[11px] text-[#999999] line-through mr-1.5">{{ product.compare_at_price | money_with_currency }}</span>
+        {%- endif -%}
+      </div>
+
+      {%- if product.available -%}
+        <button
+          type="button"
+          class="px-2.5 py-1.5 bg-[#111111] hover:bg-[#333333] text-white text-xs font-bold rounded transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+          onclick="openQuickShop('{{ product.title | escape }}', {{ product.price | divided_by: 100.0 }}, '{{ product.featured_media | image_url: width: 400 }}', '{{ product.type | default: 'STREETWEAR' }} • 100% COTTON')"
+          aria-label="اختيار مقاس {{ product.title | escape }}"
+        >
+          + أضف
+        </button>
+      {%- else -%}
+        <span class="text-[10px] text-[#999999] font-mono">SOLD OUT</span>
+      {%- endif -%}
+    </div>
+  </div>
+</article>

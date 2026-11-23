@@ -1,0 +1,25 @@
+{
+  "general": {
+    "cart": {
+      "title": "سلة المشتريات",
+      "empty": "Bag فاضية! شوف دروب الشتا واختار قطعتك",
+      "checkout": "Proceed to Checkout الآن",
+      "free_shipping_away": "باقيلك {{ amount }} جنيه وتاخد Free Shipping لأي مكان في مصر!",
+      "free_shipping_unlocked": "مبروك! فتحت الشحن المجاني لكل محافظات مصر"
+    },
+    "branches": {
+      "title": "Our Stores على أرض الواقع",
+      "subtitle": "تقدر تشرفنا وتقيس بنفسك في Our Stores في الدلتا"
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "أضف للسلة",
+      "sold_out": "نفدت Quantity",
+      "unavailable": "Sold Out",
+      "quick_view": "نظرة سريعة",
+      "size_guide": "دليل Sizeات الأوفر سايز",
+      "chilly_feature": "قطن مصري ميلتون تقيل 100% مع بطانة داخلية دافية"
+    }
+  }
+}
