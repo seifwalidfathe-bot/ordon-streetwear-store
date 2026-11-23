@@ -2,7 +2,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-black?style=for-the-badge&logo=github)](https://seifwalidfathe-bot.github.io/ordon-streetwear-store/)
 [![Shopify Theme](https://img.shields.io/badge/Shopify-Online%20Store%202.0-95BF47?style=for-the-badge&logo=shopify&logoColor=white)](https://github.com/seifwalidfathe-bot/ordon-streetwear-store/blob/main/ordon-store-shopify-theme.zip)
-[![Developer](https://img.shields.io/badge/Developed%20By-Seif%20Walid-111111?style=for-the-badge)](https://github.com/seifwalidfathe-bot)
+[![Developer](https://img.shields.io/badge/Developed%20By-Seif%20Walid-111111?style=for-the-badge)](https://seifwalidfathe-bot.github.io/portfolio/)
 
 A custom, high-craft e-commerce storefront and Shopify OS 2.0 theme engineered for Egyptian luxury streetwear brand **ORDON EGYPT** (`@ordon.eg`).
 
@@ -71,6 +71,7 @@ ordon-streetwear-store/
 ## 👨‍💻 Developer & Attribution
 
 - **Architect & Developer:** **Seif Walid**
+- **Portfolio:** [seifwalidfathe-bot.github.io/portfolio](https://seifwalidfathe-bot.github.io/portfolio/)
 - **GitHub:** [@seifwalidfathe-bot](https://github.com/seifwalidfathe-bot)
 - **LinkedIn:** [Seif Walid](https://www.linkedin.com/in/seif-w-fathe)
 
