@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Branches Modal Triggers
   document.querySelectorAll('[data-branches-trigger]').forEach(btn => {
     btn.addEventListener('click', () => {
+      closeAllModals('branches');
       if (branchesModal) {
         branchesModal.classList.add('is-active');
         document.body.style.overflow = 'hidden';
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Size Modal Triggers
   document.querySelectorAll('[data-size-trigger]').forEach(btn => {
     btn.addEventListener('click', () => {
+      closeAllModals('size');
       if (sizeModal) {
         sizeModal.classList.add('is-active');
         document.body.style.overflow = 'hidden';
@@ -53,7 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  function closeAllModals(except = null) {
+    if (except !== 'cart') closeCart();
+    if (except !== 'branches' && branchesModal) branchesModal.classList.remove('is-active');
+    if (except !== 'size' && sizeModal) sizeModal.classList.remove('is-active');
+  }
+
   function openCart() {
+    closeAllModals('cart');
     if (cartDrawer && cartOverlay) {
       cartDrawer.classList.add('is-active');
       cartOverlay.classList.add('is-active');

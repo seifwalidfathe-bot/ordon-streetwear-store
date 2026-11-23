@@ -561,6 +561,22 @@
 </head>
 <body class="pb-20 md:pb-0">
 
+  <!-- Top Demo Concept Banner (Prominent Client Review Bar) -->
+  <aside aria-label="Demo Concept Notice" class="bg-black text-white px-4 py-2 text-xs font-mono border-b border-neutral-800 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-bold tracking-wider uppercase text-neutral-200">DEMO CONCEPT BY <a href="https://seifwalidfathe-bot.github.io/portfolio/" target="_blank" rel="noopener" class="underline text-white hover:text-emerald-400 transition-colors">SEIF WALID</a></span>
+        <span class="hidden md:inline text-neutral-500">•</span>
+        <span class="hidden md:inline text-neutral-400 text-[11px]">Interactive Prototype Engineered for Client Review</span>
+      </div>
+      <div class="flex items-center gap-3 text-[11px]">
+        <a href="https://seifwalidfathe-bot.github.io/portfolio/" target="_blank" rel="noopener" class="px-2.5 py-1 rounded bg-neutral-800 hover:bg-neutral-700 text-white transition-colors">Developer Portfolio &rarr;</a>
+        <a href="https://github.com/seifwalidfathe-bot/ordon-streetwear-store" target="_blank" rel="noopener" class="text-neutral-400 hover:text-white transition-colors">GitHub Repository</a>
+      </div>
+    </div>
+  </aside>
+
   <!-- 1. Top Announcement Bar (Ticker with Free Shipping & Bio Telemetry) -->
   <aside aria-label="Promotional Announcement Bar" class="bg-[#111111] text-white text-[11px] font-mono tracking-widest uppercase overflow-hidden border-b border-[#222222] py-2 relative z-50">
     <div class="whitespace-nowrap flex animate-marquee">
@@ -600,7 +616,7 @@
 
         <!-- Desktop Navigation Links (>= 1024px) -->
         <nav aria-label="Main Navigation" class="hidden lg:flex items-center gap-5 xl:gap-7 text-xs font-brand-en font-bold uppercase tracking-wider text-[#111111]">
-          <a href="#featured" class="hover:text-[#777777] transition-colors py-2">THE DROP</a>
+          <a href="collection.html" class="hover:text-[#777777] transition-colors py-2 font-bold">THE DROP</a>
           <a href="#reels" class="hover:text-[#777777] transition-colors py-2">REELS // FIT</a>
           <a href="#lookbook" class="hover:text-[#777777] transition-colors py-2">LOOKBOOK</a>
           <button type="button" onclick="openBranchesModal()" class="hover:text-[#777777] transition-colors uppercase py-2">BRANCHES (3)</button>
@@ -911,7 +927,7 @@
           >
           <div class="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur border border-[#e5e5e5] rounded flex items-center justify-between text-xs">
             <div>
-              <div class="font-brand-en font-bold text-[#111111]">CHILLY VIBES HOODIE</div>
+              <div class="font-brand-en font-bold text-[#111111]"><a href="product.html?id=chilly-hoodie" class="hover:underline">CHILLY VIBES HOODIE</a></div>
               <div class="text-[11px] font-mono text-[#777777] mt-0.5">LE 890.00 EGP</div>
             </div>
             <button
@@ -935,14 +951,14 @@
         <h2 class="text-xl sm:text-2xl font-brand-en font-bold uppercase tracking-tight text-[#111111]">
           SHOP BY COLLECTION
         </h2>
-        <a href="#featured" class="text-xs font-bold font-brand-en uppercase text-[#777777] hover:text-[#111111]">
-          VIEW ALL &larr;
+        <a href="collection.html" class="text-xs font-bold font-brand-en uppercase text-[#777777] hover:text-[#111111]">
+          VIEW ALL &rarr;
         </a>
       </div>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
         <!-- Collection 1: Hoodies -->
-        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('hoodie')">
+        <a href="collection.html?category=hoodies" class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] block">
           <img src="assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg" alt="HOODIES & FLEECE" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 right-3 left-3 text-white">
@@ -952,7 +968,7 @@
         </div>
 
         <!-- Collection 2: Boxy Tees -->
-        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('tee')">
+        <a href="collection.html?category=tees" class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] block">
           <img src="assets/box-fit-tee-black_DfNDyP7DXOw.jpg" alt="BOXY TEES" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 right-3 left-3 text-white">
@@ -962,7 +978,7 @@
         </div>
 
         <!-- Collection 3: Baggy Jeans & Pants -->
-        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('pants')">
+        <a href="collection.html?category=jeans" class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] block">
           <img src="assets/baggy-fit-denim-jeans_Dew0RQLDUD6.jpg" alt="WIDE-LEG BAGGY DENIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 right-3 left-3 text-white">
@@ -972,7 +988,7 @@
         </div>
 
         <!-- Collection 4: Sweatshirts & Knit -->
-        <div class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] cursor-pointer" onclick="filterCategory('hoodie')">
+        <a href="collection.html?category=sweaters" class="group relative rounded overflow-hidden aspect-[3/4] bg-[#f7f7f7] block">
           <img src="assets/round-collection-sweater_DeJ13LmDcy3.jpg" alt="KNIT SWEATERS" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
           <div class="absolute bottom-3 right-3 left-3 text-white">
@@ -1013,17 +1029,17 @@
         
         <!-- Product 1: ORDON SIGNATURE BOX FIT TEE -->
         <article class="product-card group" data-category="tee" data-title="ordon signature box fit tee">
-          <div class="product-image-box">
+          <a href="product.html?id=boxy-tee" class="product-image-box block">
             <img src="assets/box-fit-tee-black_DfNDyP7DXOw.jpg" alt="ORDON SIGNATURE BOX FIT TEE" loading="lazy" width="1080" height="1440">
             <div class="absolute top-2 right-2">
               <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">NEW IN</span>
             </div>
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">BOX FIT • 2 COLORS • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                ORDON SIGNATURE BOX FIT TEE
+                <a href="product.html?id=boxy-tee" class="hover:underline">ORDON SIGNATURE BOX FIT TEE</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1045,17 +1061,17 @@
 
         <!-- Product 2: CHILLY VIBES Heavy Hoodie -->
         <article class="product-card group" data-category="hoodie" data-title="chilly vibes heavyweight hoodie">
-          <div class="product-image-box">
+          <a href="product.html?id=chilly-hoodie" class="product-image-box block">
             <img src="assets/chilly-hoodie-heavy_Dezuk1XjUtZ.jpg" alt="CHILLY VIBES HEAVYWEIGHT HOODIE" loading="lazy" width="1080" height="1440">
             <div class="absolute top-2 right-2">
               <span class="bg-rose-600 text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">HOT DROP</span>
             </div>
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">420 GSM FLEECE • 3 COLORS</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                CHILLY VIBES HEAVY HOODIE
+                <a href="product.html?id=chilly-hoodie" class="hover:underline">CHILLY VIBES HEAVY HOODIE</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1077,17 +1093,17 @@
 
         <!-- Product 3: VINTAGE DROP OVERSIZED CREWNECK -->
         <article class="product-card group" data-category="hoodie" data-title="vintage drop oversized crewneck">
-          <div class="product-image-box">
+          <a href="product.html?id=vintage-crewneck" class="product-image-box block">
             <img src="assets/vintage-drop-crewneck_DfH_PWZDfzy.jpg" alt="VINTAGE DROP OVERSIZED CREWNECK" loading="lazy" width="1080" height="1440">
             <div class="absolute top-2 right-2">
               <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">POPULAR</span>
             </div>
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">WASHED FINISH • 2 COLORS</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                VINTAGE DROP CREWNECK
+                <a href="product.html?id=vintage-crewneck" class="hover:underline">VINTAGE DROP CREWNECK</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1109,17 +1125,17 @@
 
         <!-- Product 4: WIDE-LEG BAGGY DENIM JEANS -->
         <article class="product-card group" data-category="pants" data-title="wide-leg baggy denim jeans">
-          <div class="product-image-box">
+          <a href="product.html?id=baggy-jeans" class="product-image-box block">
             <img src="assets/baggy-fit-denim-jeans_Dew0RQLDUD6.jpg" alt="WIDE-LEG BAGGY DENIM JEANS" loading="lazy" width="1080" height="1440">
             <div class="absolute top-2 right-2">
               <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">TRENDING</span>
             </div>
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">BAGGY FIT • SIZES 30:38</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                WIDE-LEG BAGGY DENIM JEANS
+                <a href="product.html?id=baggy-jeans" class="hover:underline">WIDE-LEG BAGGY DENIM JEANS</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1141,14 +1157,14 @@
 
         <!-- Product 5: MINIMALIST EARTH TONE BOXY TEE -->
         <article class="product-card group" data-category="tee" data-title="minimalist earth tone boxy tee">
-          <div class="product-image-box">
+          <a href="product.html?id=earth-tee" class="product-image-box block">
             <img src="assets/minimal-terracotta-tee_DekW3maDZjV.jpg" alt="MINIMALIST GRAPHIC BOXY TEE" loading="lazy" width="1080" height="1440">
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">280 GSM • 3 COLORS • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                MINIMALIST EARTH BOXY TEE
+                <a href="product.html?id=earth-tee" class="hover:underline">MINIMALIST EARTH BOXY TEE</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1170,14 +1186,14 @@
 
         <!-- Product 6: TACTICAL RELAXED CARGO PANTS -->
         <article class="product-card group" data-category="pants" data-title="tactical relaxed cargo pants">
-          <div class="product-image-box">
+          <a href="product.html?id=tactical-cargo" class="product-image-box block">
             <img src="assets/tactical-cargo-grey_DfFLmpYDcrG.jpg" alt="TACTICAL RELAXED CARGO PANTS" loading="lazy" width="1080" height="1440">
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">6 POCKETS • 3 COLORS • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                TACTICAL RELAXED CARGO
+                <a href="product.html?id=tactical-cargo" class="hover:underline">TACTICAL RELAXED CARGO</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1199,17 +1215,17 @@
 
         <!-- Product 7: ROUND COLLECTION KNIT SWEATER -->
         <article class="product-card group" data-category="hoodie" data-title="round collection knit sweater">
-          <div class="product-image-box">
+          <a href="product.html?id=round-sweater" class="product-image-box block">
             <img src="assets/round-collection-sweater_DeJ13LmDcy3.jpg" alt="ROUND COLLECTION KNIT SWEATER" loading="lazy" width="1080" height="1440">
             <div class="absolute top-2 right-2">
               <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">LIMITED</span>
             </div>
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">ROUND DROP • BOX FIT • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                ROUND COLLECTION SWEATER
+                <a href="product.html?id=round-sweater" class="hover:underline">ROUND COLLECTION SWEATER</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1231,14 +1247,14 @@
 
         <!-- Product 8: REGULAR BOX FIT HEAVY HOODIE -->
         <article class="product-card group" data-category="hoodie" data-title="regular box fit heavy hoodie">
-          <div class="product-image-box">
+          <a href="product.html?id=regular-box-hoodie" class="product-image-box block">
             <img src="assets/oversized-box-hoodie_DfK8JDlDZ1o.jpg" alt="REGULAR BOX FIT HEAVY HOODIE" loading="lazy" width="1080" height="1440">
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">HEAVY FLEECE • 2 COLORS • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                REGULAR BOX FIT HOODIE
+                <a href="product.html?id=regular-box-hoodie" class="hover:underline">REGULAR BOX FIT HOODIE</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1260,14 +1276,14 @@
 
         <!-- Product 9: ICONIC REGULAR STREET TEE -->
         <article class="product-card group" data-category="tee" data-title="iconic regular street tee">
-          <div class="product-image-box">
+          <a href="product.html?id=iconic-street-tee" class="product-image-box block">
             <img src="assets/regular-fit-iconic-tee_DfhU1hEjdks.jpg" alt="ICONIC REGULAR STREET TEE" loading="lazy" width="1080" height="1440">
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">REGULAR FIT • 2 COLORS • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                ICONIC REGULAR STREET TEE
+                <a href="product.html?id=iconic-street-tee" class="hover:underline">ICONIC REGULAR STREET TEE</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -1289,17 +1305,17 @@
 
         <!-- Product 10: SIGNATURE HEAVY FLEECE ZIP JACKET -->
         <article class="product-card group" data-category="hoodie" data-title="signature heavy fleece zip jacket">
-          <div class="product-image-box">
+          <a href="product.html?id=signature-fleece-jacket" class="product-image-box block">
             <img src="assets/signature-heavy-fleece_DcQ6bdhDW0x.jpg" alt="SIGNATURE HEAVY FLEECE ZIP JACKET" loading="lazy" width="1080" height="1440">
             <div class="absolute top-2 right-2">
               <span class="bg-[#111111] text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded">EXCLUSIVE</span>
             </div>
-          </div>
+          </a>
           <div class="p-3 sm:p-3.5 flex flex-col justify-between flex-grow gap-2">
             <div>
               <div class="text-[10px] text-[#777777] font-mono uppercase">HEAVY FLEECE • 3 COLORS • M-XXL</div>
               <h3 class="font-brand-en font-bold text-xs sm:text-sm text-[#111111] uppercase line-clamp-1 mt-0.5">
-                SIGNATURE HEAVY FLEECE JACKET
+                <a href="product.html?id=signature-fleece-jacket" class="hover:underline">SIGNATURE HEAVY FLEECE JACKET</a>
               </h3>
             </div>
             <div class="pt-2 border-t border-[#e5e5e5] flex items-baseline justify-between">
@@ -2068,62 +2084,84 @@
     let selectedSize = 'L';
     let selectedQty = 1;
 
+    // Mutual exclusivity helper: closes all other drawers/modals to prevent overlap
+    function closeAllDrawersAndModals(except = null) {
+      if (except !== 'cart') closeCart();
+      if (except !== 'size') closeSizeModal();
+      if (except !== 'branches') closeBranchesModal();
+      if (except !== 'grc') closeGrcModal();
+      if (except !== 'quickShop') closeQuickShop();
+      if (except !== 'mobileNav') closeMobileNav();
+    }
+
     // Mobile Navigation Drawer Controls
     function openMobileNav() {
+      closeAllDrawersAndModals('mobileNav');
       document.getElementById('mobile-nav-sidebar').classList.add('is-active');
       document.getElementById('mobile-nav-overlay').classList.add('is-active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeMobileNav() {
-      document.getElementById('mobile-nav-sidebar').classList.remove('is-active');
-      document.getElementById('mobile-nav-overlay').classList.remove('is-active');
+      const sidebar = document.getElementById('mobile-nav-sidebar');
+      const overlay = document.getElementById('mobile-nav-overlay');
+      if (sidebar) sidebar.classList.remove('is-active');
+      if (overlay) overlay.classList.remove('is-active');
       document.body.style.overflow = '';
     }
 
     // Cart Drawer Controls
     function openCart() {
+      closeAllDrawersAndModals('cart');
       document.getElementById('drawer-sidebar').classList.add('is-active');
       document.getElementById('drawer-overlay').classList.add('is-active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeCart() {
-      document.getElementById('drawer-sidebar').classList.remove('is-active');
-      document.getElementById('drawer-overlay').classList.remove('is-active');
+      const sidebar = document.getElementById('drawer-sidebar');
+      const overlay = document.getElementById('drawer-overlay');
+      if (sidebar) sidebar.classList.remove('is-active');
+      if (overlay) overlay.classList.remove('is-active');
       document.body.style.overflow = '';
     }
 
     // Branches Modal
     function openBranchesModal() {
+      closeAllDrawersAndModals('branches');
       document.getElementById('branches-modal').classList.add('is-active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeBranchesModal() {
-      document.getElementById('branches-modal').classList.remove('is-active');
+      const modal = document.getElementById('branches-modal');
+      if (modal) modal.classList.remove('is-active');
       document.body.style.overflow = '';
     }
 
     // Size Guide Modal
     function openSizeModal() {
+      closeAllDrawersAndModals('size');
       document.getElementById('size-modal').classList.add('is-active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeSizeModal() {
-      document.getElementById('size-modal').classList.remove('is-active');
+      const modal = document.getElementById('size-modal');
+      if (modal) modal.classList.remove('is-active');
       document.body.style.overflow = '';
     }
 
     // GRC Consumer Rights Modal
     function openGrcModal() {
+      closeAllDrawersAndModals('grc');
       document.getElementById('grc-modal').classList.add('is-active');
       document.body.style.overflow = 'hidden';
     }
 
     function closeGrcModal() {
-      document.getElementById('grc-modal').classList.remove('is-active');
+      const modal = document.getElementById('grc-modal');
+      if (modal) modal.classList.remove('is-active');
       document.body.style.overflow = '';
     }
 
@@ -2192,6 +2230,7 @@
       updateFitHint('L');
       updateQuickShopWhatsAppLink();
 
+      closeAllDrawersAndModals('quickShop');
       document.getElementById('quick-shop-overlay').classList.add('is-active');
       document.getElementById('quick-shop-sheet').classList.add('is-active');
       document.body.style.overflow = 'hidden';

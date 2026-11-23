@@ -12,21 +12,28 @@ A custom, high-craft e-commerce storefront and Shopify OS 2.0 theme engineered f
 
 ## 🌐 Live Client Preview (GitHub Pages)
 
-Direct link for review and client presentation:
-👉 **[https://seifwalidfathe-bot.github.io/ordon-streetwear-store/](https://seifwalidfathe-bot.github.io/ordon-streetwear-store/)**
+Direct links for review and client presentation:
+- **Homepage:** [https://seifwalidfathe-bot.github.io/ordon-streetwear-store/](https://seifwalidfathe-bot.github.io/ordon-streetwear-store/)
+- **Full Collection Page (PLP):** [https://seifwalidfathe-bot.github.io/ordon-streetwear-store/collection.html](https://seifwalidfathe-bot.github.io/ordon-streetwear-store/collection.html)
+- **Product Detail Page (PDP):** [https://seifwalidfathe-bot.github.io/ordon-streetwear-store/product.html?id=chilly-hoodie](https://seifwalidfathe-bot.github.io/ordon-streetwear-store/product.html?id=chilly-hoodie)
+- **Portfolio:** [https://seifwalidfathe-bot.github.io/portfolio/](https://seifwalidfathe-bot.github.io/portfolio/)
 
 ---
 
 ## ⚡ Key Highlights & Architecture
 
+- **Dedicated Multi-Page Storefront Architecture:**
+  - **Homepage (`index.html`):** Hero drop showcase, shoppable vertical video reels, category entrypoints, and featured pieces.
+  - **Dedicated Collection Page (`collection.html`):** Full 10-piece catalog with breadcrumbs, active category filter chips (Hoodies, Tees, Sweaters, Jeans/Cargo), price sorting, quick-shop bottom sheet, and synchronized bag state.
+  - **Dedicated Product Detail Page (`product.html?id=<slug>`):** Dynamic slug-driven PDP with high-res multi-angle thumbnail gallery, interactive size selector with fit recommendations, technical fabric specifications accordion, Egyptian Consumer Protection Law 181 guarantees, and "Complete The Look" outfit recommendations.
 - **Minimalist Streetwear Aesthetic:** High-density typography, hairline borders (`#e5e5e5`), monochrome palette, and zero generic design tropes.
 - **Conversion Rate Optimization (CRO):**
   - **Non-Intrusive Cart Experience:** Floating notification toast on product add with subtle badge animations, keeping shoppers completely uninterrupted.
-  - **Mobile Quick-Shop Bottom Sheet:** Native gesture-friendly size selection (M, L, XL, 2XL) with fit hints and dual CTAs.
+  - **Drawer & Modal Mutual Exclusivity:** Opening the shopping bag automatically closes open modals (such as the size guide or mobile menu) and vice versa, preventing overlapping UI.
   - **Dynamic Free Shipping Meter:** Real-time progress bar targeting LE 2,000 threshold for nationwide delivery.
   - **1-Click Direct WhatsApp Ordering:** Automated pre-filled WhatsApp message with product description, chosen size, itemized prices, and delivery address.
 - **Shoppable Video Reels (1080p):** Responsive vertical video carousel with individual audio/playback toggles linked directly to product checkout.
-- **Physical Stores Locator Modal:** Real addresses and direct Google Maps pins for Delta flagships (Tanta, El-Mahalla El-Kubra, Kafr El-Sheikh).
+- **Physical Stores Locator Modal:** Real addresses and direct Google Maps pins for Cairo & Giza flagships (Nasr City, New Cairo, Dokki).
 - **Size & Measurement Guide Modal:** Detailed metric specifications (chest, body length, sleeve, recommended weight and height).
 - **Egyptian Regulatory Compliance (GRC):** Fully aligned with Egyptian Consumer Protection Law No. 181/2018 (Try-on before payment, 14-day returns, 30-day manufacturing defect warranty) and Personal Data Law No. 151/2020.
 - **Technical SEO:** Structured JSON-LD Schema graph (`ClothingStore`, `Product`, `FAQPage`, `BreadcrumbList`), OpenGraph, Twitter Cards, and canonical tags.

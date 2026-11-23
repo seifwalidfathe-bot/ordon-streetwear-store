@@ -1,27 +1,39 @@
 {%- comment -%}
   ORDON EGYPT — Main Collection Section
+  Heavyweight streetwear catalog layout
 {%- endcomment -%}
 
-<section class="py-12 bg-[#08090d] min-h-screen text-slate-100">
+<section class="py-12 bg-white min-h-screen text-[#111111]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center gap-2 text-xs text-[#777777] font-mono mb-8" aria-label="Breadcrumb Navigation">
+      <a href="/" class="hover:text-black transition-colors">HOME</a>
+      <span>/</span>
+      <span class="text-black font-bold uppercase">COLLECTIONS</span>
+    </nav>
+
+    <!-- Collection Header -->
     <div class="mb-10 text-center max-w-2xl mx-auto">
-      <div class="ice-badge mb-2">
-        <span class="pulse-dot"></span> ORDON ARCHIVE
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#f7f7f7] border border-[#e5e5e5] rounded text-xs font-mono font-bold uppercase tracking-wider mb-3">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>WINTER 2026 // DROP 04</span>
       </div>
-      <h1 class="text-3xl sm:text-5xl font-display font-black text-white uppercase tracking-tight">
-        {{ collection.title | default: 'جميع القطع (All Streetwear Drops)' }}
+      <h1 class="text-3xl sm:text-5xl font-black text-[#111111] uppercase tracking-tight">
+        {{ collection.title | default: 'THE FULL DROP (CATALOG)' }}
       </h1>
-      <p class="text-xs sm:text-sm text-slate-400 mt-2">
-        {{ collection.description | default: 'تسوق قطع الشتا الثقيلة والأوفرسايز المصنوعة من القطن المصري الفاخر.' }}
+      <p class="text-xs sm:text-sm text-[#555555] mt-2">
+        {{ collection.description | default: '100% combed Egyptian cotton heavyweight drops. Engineered for structural drape and daily movement.' }}
       </p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Product Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
       {%- for product in collection.products -%}
         {% render 'product-card', product: product %}
       {%- else -%}
-        <div class="col-span-full text-center py-20 text-slate-500 font-mono text-sm">
-          لا توجد منتجات متوفرة في هذه المجموعة حالياً.
+        <div class="col-span-full text-center py-20 text-[#777777] font-mono text-sm">
+          No products currently available in this collection drop.
         </div>
       {%- endfor -%}
     </div>
